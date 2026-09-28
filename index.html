@@ -1,0 +1,2230 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Chamunda Mobile — Mobiles &amp; Accessories Showroom | Airoli, Navi Mumbai</title>
+  <meta name="description" content="Chamunda Mobile is the premier mobile phone and genuine accessories showroom in Sector-8, Airoli, Navi Mumbai. Explore Apple iPhones, Samsung Galaxy, OnePlus, Vivo, and certified accessories with hands-on live demos.">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN with plugins -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            brand: {
+              graphite: '#070A11',
+              dark: '#0D1322',
+              card: '#131B2E',
+              border: '#1E293B',
+              blue: '#2563EB',
+              blueGlow: '#3B82F6',
+              lightBlue: '#60A5FA',
+              lightBg: '#F8FAFC',
+              muted: '#94A3B8'
+            }
+          },
+          boxShadow: {
+            'glow': '0 0 35px -5px rgba(59, 130, 246, 0.35)',
+            'subtle': '0 10px 30px -10px rgba(0, 0, 0, 0.08)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style data-purpose="custom-decorations">
+    /* Subtle radial glow matching hero aesthetics */
+    .hero-glow {
+      background: radial-gradient(circle at 65% 45%, rgba(37, 99, 235, 0.18) 0%, rgba(13, 19, 34, 0.02) 65%);
+    }
+
+    .map-pattern {
+      background-color: #f1f5f9;
+      background-image: 
+        radial-gradient(#cbd5e1 1.2px, transparent 1.2px), 
+        linear-gradient(to right, #e2e8f0 1px, transparent 1px),
+        linear-gradient(to bottom, #e2e8f0 1px, transparent 1px);
+      background-size: 28px 28px, 56px 56px, 56px 56px;
+    }
+
+    /* Animated scroll icon stroke pulse */
+    @keyframes scrollPulse {
+      0%, 100% { transform: translateY(0); opacity: 1; }
+      50% { transform: translateY(6px); opacity: 0.3; }
+    }
+    .scroll-indicator-dot {
+      animation: scrollPulse 1.8s ease-in-out infinite;
+    }
+
+    /* Custom scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #080C14;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1E293B;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #2563EB;
+    }
+
+    /* Marquee animation */
+    @keyframes marquee {
+      0% { transform: translateX(0%); }
+      100% { transform: translateX(-50%); }
+    }
+    .animate-marquee {
+      display: flex;
+      width: 200%;
+      animation: marquee 25s linear infinite;
+    }
+    .animate-marquee:hover {
+      animation-play-state: paused;
+    }
+
+    /* Modal animation */
+    .modal-enter {
+      animation: modalFadeIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    }
+    @keyframes modalFadeIn {
+      from { opacity: 0; transform: scale(0.95) translateY(10px); }
+      to { opacity: 1; transform: scale(1) translateY(0); }
+    }
+  </style>
+</head>
+<body class="bg-[#080C14] text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white relative">
+
+  <!-- Reading Progress Bar -->
+  <div id="scroll-progress" class="fixed top-0 left-0 h-1 bg-gradient-to-r from-blue-500 via-indigo-400 to-amber-400 z-[100] transition-all duration-75 w-0"></div>
+
+  <!-- Announcement Bar -->
+  <div class="bg-gradient-to-r from-blue-900/60 via-indigo-900/50 to-blue-950/80 border-b border-blue-800/40 text-[11px] sm:text-xs text-blue-200 py-1.5 px-4 text-center">
+    <div class="max-w-7xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+      <span class="inline-flex items-center gap-1.5 bg-blue-500/20 text-blue-300 font-bold px-2 py-0.5 rounded-full border border-blue-400/30 text-[10px] uppercase">
+        <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-ping"></span>
+        Festive Upgrade
+      </span>
+      <span>Live In-Store Offers Available on iPhone 16 &amp; Galaxy S24 Series • Zero Down-Payment EMI Available</span>
+      <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20would%20like%20to%20check%20today%27s%20best%20offers" target="_blank" rel="noopener noreferrer" class="underline font-bold text-white hover:text-blue-300 ml-1">
+        Check Offers ↗
+      </a>
+    </div>
+  </div>
+
+  <!-- BEGIN: Header -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-[#080C14]/90 border-b border-slate-800/80 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo & Monogram -->
+        <a class="flex items-center gap-3.5 group" href="#home">
+          <div class="w-11 h-11 rounded-full p-0.5 bg-gradient-to-tr from-blue-500 via-amber-400 to-blue-600 shadow-md flex items-center justify-center transition-transform duration-300 group-hover:scale-105 shrink-0 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWPOTQpALqQfCdEjCoIrGrjO_CSGqxiSO0D373gyEXJNmy4nPSUVH-at-OH6e5A4NtnZNCkOV2m4Lm9Iijs7A_ZDG3ygVoNa--ltOmlM2HTc9EbP4MUvUigCbHfGsP2zx7uoNtbucN62pTfdZ_PfiXEBSLIUpCTBoCSEZ9-hw2TN5AmzHV_CSwmx0AFRSEBje_4g7u9n_2HAEF_AjQObVVjKrugZIL3nuv04iRqLV3e13OprKHavvH51jU8WtATd3FMA" alt="Chamunda Mobile Logo" class="w-full h-full rounded-full object-cover">
+          </div>
+          <div>
+            <div class="flex items-center gap-2">
+              <span class="block text-lg font-bold tracking-tight text-white group-hover:text-blue-400 transition-colors">CHAMUNDA MOBILE</span>
+              <span id="store-status-pill" class="hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-950/80 border border-emerald-500/40 text-emerald-400">
+                <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span id="store-status-text">Open Till 9:30 PM</span>
+              </span>
+            </div>
+            <span class="block text-[11px] font-medium tracking-wider text-slate-400 uppercase -mt-0.5">Mobiles &amp; Accessories • Sector 8 Airoli</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center space-x-1" id="desktop-nav">
+          <a class="nav-link px-3.5 py-2 text-sm font-medium text-white hover:text-blue-400 transition-colors rounded-lg" href="#home">Home</a>
+          <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors rounded-lg" href="#mobiles">Mobiles</a>
+          <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors rounded-lg" href="#accessories">Accessories</a>
+          <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors rounded-lg" href="#gallery">Showroom</a>
+          <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors rounded-lg" href="#calculator">EMI &amp; Exchange</a>
+          <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors rounded-lg" href="#about">About</a>
+          <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors rounded-lg" href="#reviews">Reviews</a>
+          <a class="nav-link px-3.5 py-2 text-sm font-medium text-slate-300 hover:text-white transition-colors rounded-lg" href="#visit">Visit Us</a>
+        </nav>
+
+        <!-- Right Quick CTAs -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a class="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold uppercase tracking-wider text-emerald-400 border border-emerald-500/40 rounded-full hover:bg-emerald-500/10 transition-all duration-300" href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20have%20an%20enquiry%20regarding%20mobile%20availability" target="_blank" rel="noopener noreferrer">
+            <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.086.086-.177.18-.076.353.101.173.45 0.742.966 1.202.664.591 1.224.774 1.397.86.173.086.274.072.375-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"></path>
+            </svg>
+            <span>WhatsApp</span>
+          </a>
+          <a class="inline-flex items-center justify-center px-4 py-2 text-xs font-semibold uppercase tracking-wider text-white bg-blue-600 hover:bg-blue-700 rounded-full transition-all duration-300 shadow-md" href="tel:+917620575529">
+            <svg class="w-3.5 h-3.5 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+            <span>Call Now</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <div class="lg:hidden flex items-center gap-2">
+          <a href="https://wa.me/918690689207" class="p-2 text-emerald-400 bg-emerald-950/60 rounded-full border border-emerald-500/30">
+            <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.086.086-.177.18-.076.353.101.173.45 0.742.966 1.202.664.591 1.224.774 1.397.86.173.086.274.072.375-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"></path>
+            </svg>
+          </a>
+          <button aria-label="Toggle menu" class="text-slate-400 hover:text-white focus:outline-none p-2 rounded-lg bg-slate-900 border border-slate-800" id="mobile-menu-btn" type="button">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div class="hidden lg:hidden bg-[#0D1322] border-b border-slate-800 px-4 pt-3 pb-6 space-y-2 transition-all" id="mobile-menu">
+      <div class="px-3 py-2 bg-slate-900/80 rounded-xl border border-slate-800 mb-2 flex items-center justify-between text-xs">
+        <span class="text-slate-400 font-medium">Showroom Status:</span>
+        <span class="text-emerald-400 font-bold flex items-center gap-1.5">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          Open Daily 10 AM - 9:30 PM
+        </span>
+      </div>
+      <a class="block px-3 py-2 text-base font-medium text-blue-400 hover:bg-slate-900 rounded-lg" href="#home">Home</a>
+      <a class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 rounded-lg" href="#mobiles">Mobiles Collection</a>
+      <a class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 rounded-lg" href="#accessories">Accessories</a>
+      <a class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 rounded-lg" href="#gallery">Showroom Gallery</a>
+      <a class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 rounded-lg" href="#calculator">EMI &amp; Exchange Calculator</a>
+      <a class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 rounded-lg" href="#about">About Us</a>
+      <a class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 rounded-lg" href="#reviews">Customer Reviews</a>
+      <a class="block px-3 py-2 text-base font-medium text-slate-300 hover:text-white hover:bg-slate-900 rounded-lg" href="#visit">Visit Showroom</a>
+      
+      <div class="pt-3 grid grid-cols-2 gap-2">
+        <a class="text-center py-2.5 text-xs font-semibold uppercase tracking-wider text-emerald-400 border border-emerald-500/40 rounded-xl bg-emerald-950/40" href="https://wa.me/918690689207" target="_blank">
+          WhatsApp
+        </a>
+        <a class="text-center py-2.5 text-xs font-semibold uppercase tracking-wider text-white rounded-xl bg-blue-600 hover:bg-blue-700" href="tel:+917620575529">
+          Call Store
+        </a>
+      </div>
+    </div>
+  </header>
+  <!-- END: Header -->
+
+  <!-- BEGIN: Hero Section -->
+  <section class="relative overflow-hidden hero-glow pt-8 pb-16 lg:pt-16 lg:pb-24" id="home">
+    <div class="absolute -top-32 right-1/4 w-[500px] h-[500px] bg-blue-600/15 rounded-full blur-[128px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-6 z-10 space-y-8">
+          <!-- Category Indicator Pill -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 text-[11px] font-semibold tracking-wider text-slate-400 uppercase">
+            <span class="text-slate-300">Flagships</span>
+            <span class="text-blue-500">•</span>
+            <span class="text-slate-300">Accessories</span>
+            <span class="text-blue-500">•</span>
+            <span class="text-blue-400">Live Hands-on Demos</span>
+          </div>
+
+          <!-- Hero Headline -->
+          <div class="space-y-3">
+            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+              Your next upgrade.<br>
+              <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-500 to-indigo-300">Starts right here.</span>
+            </h1>
+            <p class="text-base sm:text-lg text-slate-300 max-w-lg leading-relaxed pt-1">
+              Discover the latest smartphones and premium studio accessories at <strong class="text-white">Chamunda Mobile</strong>. Personalized in-store guidance, 100% brand-sealed inventory, and zero-headache data transfer.
+            </p>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap items-center gap-3 pt-1">
+            <a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full bg-white text-slate-900 font-bold text-sm hover:bg-slate-100 hover:shadow-glow transition-all duration-300" href="#mobiles">
+              <span>Explore Collection</span>
+              <svg class="w-4 h-4 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+            
+            <a class="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-semibold text-sm transition-all duration-300 shadow-lg shadow-emerald-900/30" href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20would%20like%20to%20enquire%20about%20smartphone%20availability" rel="noopener noreferrer" target="_blank">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.086.086-.177.18-.076.353.101.173.45 0.742.966 1.202.664.591 1.224.774 1.397.86.173.086.274.072.375-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"></path>
+              </svg>
+              <span>WhatsApp Enquiry</span>
+            </a>
+
+            <a class="inline-flex items-center justify-center gap-1.5 px-5 py-3.5 rounded-full bg-slate-900 border border-slate-700/80 text-slate-300 font-medium text-sm hover:border-blue-500 hover:text-white transition-all" href="#calculator">
+              <span>Calculate EMI</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Feature Bullets -->
+          <div class="pt-4 grid grid-cols-3 gap-4 border-t border-slate-800/80 text-slate-400">
+            <div>
+              <p class="text-white text-xs font-bold flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+                100% Genuine
+              </p>
+              <p class="text-[11px] text-slate-500">Official Brand Warranty</p>
+            </div>
+            <div>
+              <p class="text-white text-xs font-bold flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+                Live Hands-on
+              </p>
+              <p class="text-[11px] text-slate-500">Try Before You Buy</p>
+            </div>
+            <div>
+              <p class="text-white text-xs font-bold flex items-center gap-1">
+                <svg class="w-3.5 h-3.5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"></path></svg>
+                Free Data Shift
+              </p>
+              <p class="text-[11px] text-slate-500">Full In-Store Setup</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Showcase Graphic (Interactive Device Showcase) -->
+        <div class="lg:col-span-6 relative flex justify-center lg:justify-end">
+          <div class="relative w-full max-w-[540px]">
+            <div class="absolute inset-0 bg-blue-500/10 filter blur-3xl rounded-full scale-90 -z-10"></div>
+            
+            <div class="relative p-3 bg-gradient-to-b from-slate-800/60 via-slate-900/90 to-[#080C14] rounded-3xl border border-slate-800 shadow-2xl backdrop-blur-sm">
+              <div class="relative h-[380px] sm:h-[440px] rounded-2xl overflow-hidden bg-[#0A0F1D] flex items-end justify-center">
+                <!-- Background Pedestal Geometry -->
+                <div class="absolute inset-x-0 bottom-0 h-44 bg-gradient-to-t from-slate-950 via-slate-900 to-transparent"></div>
+                <div class="absolute -bottom-6 w-72 h-16 bg-blue-500/20 rounded-full blur-xl"></div>
+                
+                <!-- Trio of modern flagship devices -->
+                <div class="relative z-10 w-full flex items-end justify-center gap-2 sm:gap-4 px-4 pb-4">
+                  <!-- Left: Titanium Sleek Flagship -->
+                  <div onclick="openQuickView('iphone-16-pro')" class="w-28 sm:w-36 h-64 sm:h-76 bg-slate-800 rounded-[28px] p-1.5 border border-slate-600/70 shadow-2xl transform -rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer group/device" title="Click to view Apple iPhone 16 Pro">
+                    <div class="w-full h-full bg-slate-900 rounded-[22px] overflow-hidden flex flex-col justify-between p-2.5 relative border border-slate-700/50">
+                      <div class="mx-auto w-10 h-3 bg-black rounded-full flex items-center justify-end px-1">
+                        <div class="w-1.5 h-1.5 bg-blue-900 rounded-full"></div>
+                      </div>
+                      <div class="text-center my-auto">
+                        <div class="w-10 h-10 mx-auto rounded-full bg-slate-800/80 flex items-center justify-center border border-slate-700 group-hover/device:border-blue-400 transition-colors">
+                          <svg class="w-5 h-5 text-slate-300" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.64-.78 1.08-1.87.96-2.96-.93.04-2.06.62-2.73 1.4-.59.68-1.11 1.78-.97 2.84 1.04.08 2.1-.5 2.74-1.28z"></path>
+                          </svg>
+                        </div>
+                        <p class="text-[9px] uppercase tracking-wider text-slate-400 mt-2 font-bold">iPhone 16 Pro</p>
+                        <span class="text-[8px] text-blue-400 underline">Tap to view</span>
+                      </div>
+                      <div class="h-1 w-12 bg-slate-700 mx-auto rounded-full"></div>
+                    </div>
+                  </div>
+
+                  <!-- Center: Flagship Ultra with Blue Rim Lighting -->
+                  <div onclick="openQuickView('samsung-s24-ultra')" class="w-32 sm:w-44 h-72 sm:h-88 bg-gradient-to-b from-slate-700 to-slate-900 rounded-[30px] p-2 border border-blue-400/50 shadow-2xl shadow-blue-500/20 z-20 transform scale-105 hover:scale-110 transition-all duration-300 cursor-pointer group/device" title="Click to view Samsung Galaxy S24 Ultra">
+                    <div class="w-full h-full bg-[#050B16] rounded-[24px] overflow-hidden flex flex-col justify-between p-3 relative">
+                      <div class="mx-auto w-12 h-1 bg-slate-700 rounded-full"></div>
+                      <div class="text-center my-auto space-y-2">
+                        <div class="inline-block p-2 rounded-xl bg-blue-950/70 border border-blue-800/80 group-hover/device:border-blue-400 transition-colors">
+                          <div class="grid grid-cols-2 gap-1.5 p-1">
+                            <div class="w-4 h-4 rounded-full bg-slate-900 border border-blue-400 flex items-center justify-center">
+                              <div class="w-1.5 h-1.5 rounded-full bg-blue-300"></div>
+                            </div>
+                            <div class="w-4 h-4 rounded-full bg-slate-900 border border-blue-400 flex items-center justify-center">
+                              <div class="w-1.5 h-1.5 rounded-full bg-blue-300"></div>
+                            </div>
+                            <div class="w-4 h-4 rounded-full bg-slate-900 border border-blue-400 flex items-center justify-center">
+                              <div class="w-1.5 h-1.5 rounded-full bg-blue-300"></div>
+                            </div>
+                            <div class="w-4 h-4 rounded-full bg-slate-900 border border-slate-600"></div>
+                          </div>
+                        </div>
+                        <h4 class="text-xs font-bold text-white tracking-wide">SAMSUNG S24 ULTRA</h4>
+                        <span class="inline-block px-2 py-0.5 rounded-full text-[10px] font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">Live In Showroom</span>
+                        <p class="text-[9px] text-blue-400 underline block pt-0.5">Quick Specs ↗</p>
+                      </div>
+                      <div class="h-1 w-16 bg-blue-500/60 mx-auto rounded-full"></div>
+                    </div>
+                  </div>
+
+                  <!-- Right: High-End Vivo X100 Pro -->
+                  <div onclick="openQuickView('vivo-x100-pro')" class="w-28 sm:w-36 h-64 sm:h-76 bg-slate-800 rounded-[28px] p-1.5 border border-slate-600/70 shadow-2xl transform rotate-3 hover:rotate-0 hover:scale-105 transition-all duration-300 cursor-pointer group/device" title="Click to view vivo X100 Pro">
+                    <div class="w-full h-full bg-gradient-to-b from-[#0F1E36] to-[#0A1322] rounded-[22px] overflow-hidden flex flex-col justify-between p-2.5 relative border border-blue-900/60">
+                      <div class="w-2.5 h-2.5 bg-black rounded-full ml-auto mr-2"></div>
+                      <div class="text-center my-auto">
+                        <div class="w-12 h-12 mx-auto rounded-full border-2 border-blue-400/60 flex items-center justify-center bg-slate-900 shadow-inner group-hover/device:border-blue-300 transition-colors">
+                          <div class="w-5 h-5 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-400"></div>
+                        </div>
+                        <p class="text-[9px] uppercase tracking-wider text-slate-300 mt-2 font-bold">vivo X100 Pro</p>
+                        <span class="text-[8px] text-blue-400 underline">ZEISS Optics</span>
+                      </div>
+                      <div class="h-1 w-12 bg-slate-700 mx-auto rounded-full"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: Hero Section -->
+
+  <!-- BEGIN: Brand Ticker Bar -->
+  <section class="bg-white py-6 border-y border-slate-200 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-2 flex items-center justify-between">
+      <span class="text-xs uppercase font-extrabold tracking-widest text-slate-400">Authorized Retail Brands Available In Showroom</span>
+      <span class="text-xs text-blue-600 font-semibold hidden sm:inline">100% Genuine Billing with GST</span>
+    </div>
+    <div class="relative overflow-hidden w-full">
+      <div class="animate-marquee flex items-center gap-12 sm:gap-16 whitespace-nowrap text-slate-800 font-extrabold text-sm sm:text-base tracking-wider uppercase opacity-85">
+        <span class="hover:text-blue-600 cursor-pointer transition-colors"> Apple iPhone</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">Samsung Galaxy</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">OnePlus 5G</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">vivo ZEISS</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">OPPO Reno</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">Realme</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">Motorola</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">Xiaomi</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">Portronics Pro</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">Stuffcool MagSafe</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">boAt Audio</span>
+        <span class="text-slate-300">•</span>
+        <!-- Duplicate for infinite marquee loop -->
+        <span class="hover:text-blue-600 cursor-pointer transition-colors"> Apple iPhone</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">Samsung Galaxy</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">OnePlus 5G</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">vivo ZEISS</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">OPPO Reno</span>
+        <span class="text-slate-300">•</span>
+        <span class="hover:text-blue-600 cursor-pointer transition-colors">Realme</span>
+      </div>
+    </div>
+  </section>
+  <!-- END: Brand Ticker Bar -->
+
+  <!-- BEGIN: Mobile Collection Showcase Section -->
+  <section class="py-20 bg-brand-lightBg text-slate-900" id="mobiles">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Title Area -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+        <div class="space-y-2">
+          <p class="text-xs font-bold uppercase tracking-widest text-blue-600">Explore In Store</p>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-950">
+            Find your perfect phone.
+          </h2>
+          <p class="text-slate-600 max-w-2xl text-base">
+            Experience the latest flagship and mid-range devices in person. Test the cameras, feel the in-hand ergonomics, and get authentic guidance without online guesswork.
+          </p>
+        </div>
+
+        <!-- Live Stock Filter & Search Bar -->
+        <div class="w-full md:w-80">
+          <div class="relative">
+            <input type="text" id="phone-search-input" placeholder="Search phone name, model..." class="w-full pl-10 pr-4 py-2.5 rounded-full bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 shadow-sm text-slate-900" onkeyup="filterPhones()">
+            <svg class="w-4 h-4 absolute left-3.5 top-3.5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Category Filter Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 text-xs font-semibold scrollbar-none" id="phone-filters">
+        <button onclick="setPhoneCategory('all', this)" class="phone-filter-btn px-4 py-2 rounded-full bg-slate-900 text-white shadow-md shrink-0">All Showroom Devices</button>
+        <button onclick="setPhoneCategory('apple', this)" class="phone-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 border border-slate-300 shrink-0">Apple iPhone</button>
+        <button onclick="setPhoneCategory('samsung', this)" class="phone-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 border border-slate-300 shrink-0">Samsung Galaxy</button>
+        <button onclick="setPhoneCategory('oneplus', this)" class="phone-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 border border-slate-300 shrink-0">OnePlus Series</button>
+        <button onclick="setPhoneCategory('vivo', this)" class="phone-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 border border-slate-300 shrink-0">vivo Series</button>
+        <button onclick="setPhoneCategory('oppo_realme', this)" class="phone-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 border border-slate-300 shrink-0">OPPO &amp; Realme</button>
+      </div>
+
+      <!-- Dynamic Phone Cards Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" id="phones-grid">
+        
+        <!-- Phone 1: iPhone 16 Pro -->
+        <div class="phone-card bg-white rounded-3xl p-6 border border-slate-200 shadow-subtle hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="apple" data-name="apple iphone 16 pro max 5g">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold bg-slate-100 text-slate-800 border border-slate-200">Apple Flagship</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">In Stock</span>
+            </div>
+            <div class="h-44 rounded-2xl bg-gradient-to-tr from-slate-900 to-slate-800 p-4 flex items-center justify-center relative overflow-hidden mb-4 group cursor-pointer" onclick="openQuickView('iphone-16-pro')">
+              <div class="text-center">
+                <div class="w-14 h-14 mx-auto rounded-full bg-slate-800 border border-slate-600 flex items-center justify-center text-slate-200 group-hover:scale-110 transition-transform">
+                  <svg class="w-8 h-8 fill-current" viewBox="0 0 24 24"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.64-.78 1.08-1.87.96-2.96-.93.04-2.06.62-2.73 1.4-.59.68-1.11 1.78-.97 2.84 1.04.08 2.1-.5 2.74-1.28z"></path></svg>
+                </div>
+                <span class="text-xs text-blue-300 font-semibold block mt-2">Titanium Series • A18 Pro</span>
+              </div>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-blue-600/90 text-white text-[10px] font-bold">Live Demo</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Apple iPhone 16 Pro &amp; Pro Max</h3>
+            <p class="text-xs text-slate-500 mt-1">Camera Control button, 48MP Fusion camera, Super Retina XDR OLED, Grade 5 Titanium.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span>Variants: 128G / 256G / 512G / 1TB</span>
+              <span class="font-bold text-blue-600">No Cost EMI Avail.</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-2 flex items-center gap-2">
+            <button onclick="openQuickView('iphone-16-pro')" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors">
+              Specs &amp; Colors
+            </button>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20want%20to%20check%20price%20and%20stock%20for%20iPhone%2016%20Pro" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors flex items-center gap-1">
+              <span>Enquire</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 2: Samsung Galaxy S24 Ultra -->
+        <div class="phone-card bg-white rounded-3xl p-6 border border-slate-200 shadow-subtle hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="samsung" data-name="samsung galaxy s24 ultra 5g ai">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200">Galaxy AI Series</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">In Stock</span>
+            </div>
+            <div class="h-44 rounded-2xl bg-gradient-to-tr from-[#0F172A] to-[#1E293B] p-4 flex items-center justify-center relative overflow-hidden mb-4 group cursor-pointer" onclick="openQuickView('samsung-s24-ultra')">
+              <div class="text-center">
+                <div class="w-14 h-14 mx-auto rounded-full bg-blue-950 border border-blue-500/40 flex items-center justify-center text-blue-300 group-hover:scale-110 transition-transform">
+                  <span class="font-extrabold text-lg">AI</span>
+                </div>
+                <span class="text-xs text-blue-300 font-semibold block mt-2">200MP Quad Tele • S-Pen</span>
+              </div>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-blue-600/90 text-white text-[10px] font-bold">Live Demo</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Samsung Galaxy S24 Ultra</h3>
+            <p class="text-xs text-slate-500 mt-1">Galaxy AI suite, Snapdragon 8 Gen 3, Titanium frame, 2600 nits anti-reflective screen.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span>Variants: 256GB / 512GB / 1TB</span>
+              <span class="font-bold text-blue-600">Best Exchange Bonus</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-2 flex items-center gap-2">
+            <button onclick="openQuickView('samsung-s24-ultra')" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors">
+              Specs &amp; Colors
+            </button>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20is%20Samsung%20S24%20Ultra%20available?" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors flex items-center gap-1">
+              <span>Enquire</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 3: OnePlus 12 5G -->
+        <div class="phone-card bg-white rounded-3xl p-6 border border-slate-200 shadow-subtle hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="oneplus" data-name="oneplus 12 5g hasselblad">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold bg-red-50 text-red-700 border border-red-200">OnePlus Flagship</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">In Stock</span>
+            </div>
+            <div class="h-44 rounded-2xl bg-gradient-to-tr from-slate-900 to-[#1A2634] p-4 flex items-center justify-center relative overflow-hidden mb-4 group cursor-pointer" onclick="openQuickView('oneplus-12')">
+              <div class="text-center">
+                <div class="w-14 h-14 mx-auto rounded-full bg-slate-800 border border-red-500/40 flex items-center justify-center text-red-400 group-hover:scale-110 transition-transform">
+                  <span class="font-extrabold text-sm">100W</span>
+                </div>
+                <span class="text-xs text-slate-300 font-semibold block mt-2">Hasselblad 4th Gen • 5400mAh</span>
+              </div>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-emerald-600/90 text-white text-[10px] font-bold">100W In Box</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">OnePlus 12 5G</h3>
+            <p class="text-xs text-slate-500 mt-1">2K 120Hz ProXDR display, 5400mAh battery with 100W SUPERVOOC charging included in box.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span>Variants: 12GB+256G / 16GB+512G</span>
+              <span class="font-bold text-blue-600">Instant Cash Discount</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-2 flex items-center gap-2">
+            <button onclick="openQuickView('oneplus-12')" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors">
+              Specs &amp; Colors
+            </button>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20OnePlus%2012%20enquiry" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors flex items-center gap-1">
+              <span>Enquire</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 4: vivo X100 Pro ZEISS -->
+        <div class="phone-card bg-white rounded-3xl p-6 border border-slate-200 shadow-subtle hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="vivo" data-name="vivo x100 pro zeiss apocromatic camera">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold bg-blue-50 text-blue-700 border border-blue-200">ZEISS Optics</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">In Stock</span>
+            </div>
+            <div class="h-44 rounded-2xl bg-gradient-to-tr from-slate-900 to-[#0A1322] p-4 flex items-center justify-center relative overflow-hidden mb-4 group cursor-pointer" onclick="openQuickView('vivo-x100-pro')">
+              <div class="text-center">
+                <div class="w-14 h-14 mx-auto rounded-full bg-blue-950 border border-blue-400 flex items-center justify-center text-blue-300 group-hover:scale-110 transition-transform">
+                  <span class="font-bold text-xs">1-INCH</span>
+                </div>
+                <span class="text-xs text-blue-300 font-semibold block mt-2">ZEISS APO Floating Telephoto</span>
+              </div>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-blue-600/90 text-white text-[10px] font-bold">Best Portrait</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">vivo X100 Pro 5G</h3>
+            <p class="text-xs text-slate-500 mt-1">50MP 1-inch Sony sensor, Dimensity 9300 flagship chipset, 100W FlashCharge, V3 imaging chip.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span>Variants: 16GB RAM + 512GB</span>
+              <span class="font-bold text-blue-600">Live Demo Ready</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-2 flex items-center gap-2">
+            <button onclick="openQuickView('vivo-x100-pro')" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors">
+              Specs &amp; Colors
+            </button>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20vivo%20X100%20Pro%20availability" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors flex items-center gap-1">
+              <span>Enquire</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 5: vivo V40 Series -->
+        <div class="phone-card bg-white rounded-3xl p-6 border border-slate-200 shadow-subtle hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="vivo" data-name="vivo v40 pro 5g zeiss aura light">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold bg-pink-50 text-pink-700 border border-pink-200">Slim 5500mAh</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">In Stock</span>
+            </div>
+            <div class="h-44 rounded-2xl bg-gradient-to-tr from-slate-900 to-indigo-950 p-4 flex items-center justify-center relative overflow-hidden mb-4 group cursor-pointer" onclick="openQuickView('vivo-v40')">
+              <div class="text-center">
+                <div class="w-14 h-14 mx-auto rounded-full bg-slate-800 border border-pink-400 flex items-center justify-center text-pink-300 group-hover:scale-110 transition-transform">
+                  <span class="font-bold text-xs">V40</span>
+                </div>
+                <span class="text-xs text-pink-200 font-semibold block mt-2">ZEISS Multifocal Portrait</span>
+              </div>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-pink-600/90 text-white text-[10px] font-bold">5500 mAh Slim</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">vivo V40 &amp; V40 Pro 5G</h3>
+            <p class="text-xs text-slate-500 mt-1">India's slimmest phone with 5500mAh battery, IP68 water resistance, and Smart Aura Light.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span>Variants: 8+128G / 8+256G / 12+512G</span>
+              <span class="font-bold text-blue-600">Special Student Offer</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-2 flex items-center gap-2">
+            <button onclick="openQuickView('vivo-v40')" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors">
+              Specs &amp; Colors
+            </button>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20vivo%20V40%20enquiry" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors flex items-center gap-1">
+              <span>Enquire</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Phone 6: Realme GT 6 & OPPO Reno Series -->
+        <div class="phone-card bg-white rounded-3xl p-6 border border-slate-200 shadow-subtle hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="oppo_realme" data-name="realme gt 6 oppo reno 12 pro 5g">
+          <div>
+            <div class="flex items-center justify-between mb-3">
+              <span class="px-3 py-1 rounded-full text-[10px] font-bold bg-amber-50 text-amber-700 border border-amber-200">Speed Flagship</span>
+              <span class="px-2.5 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">In Stock</span>
+            </div>
+            <div class="h-44 rounded-2xl bg-gradient-to-tr from-slate-900 to-amber-950 p-4 flex items-center justify-center relative overflow-hidden mb-4 group cursor-pointer" onclick="openQuickView('realme-gt6')">
+              <div class="text-center">
+                <div class="w-14 h-14 mx-auto rounded-full bg-slate-800 border border-amber-400 flex items-center justify-center text-amber-300 group-hover:scale-110 transition-transform">
+                  <span class="font-bold text-xs">6000 Nit</span>
+                </div>
+                <span class="text-xs text-amber-200 font-semibold block mt-2">Snapdragon 8s Gen 3 • 120W</span>
+              </div>
+              <span class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-amber-600/90 text-white text-[10px] font-bold">120W Charger</span>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900">Realme GT 6 / Reno 12 Pro</h3>
+            <p class="text-xs text-slate-500 mt-1">6000 nit ultra-bright display, 120W Ultra Charge, Sony LYT-808 OIS camera system.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-600">
+              <span>Variants: 8+256G / 12+256G / 16+512G</span>
+              <span class="font-bold text-blue-600">Available Today</span>
+            </div>
+          </div>
+          <div class="pt-4 mt-2 flex items-center gap-2">
+            <button onclick="openQuickView('realme-gt6')" class="flex-1 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition-colors">
+              Specs &amp; Colors
+            </button>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20Realme%20GT%206%20enquiry" target="_blank" rel="noopener noreferrer" class="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-colors flex items-center gap-1">
+              <span>Enquire</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Quick Consultation Card -->
+      <div class="p-6 rounded-3xl bg-blue-50 border border-blue-100 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-sm">
+        <div class="space-y-1">
+          <h4 class="text-base font-bold text-blue-950">Looking for a specific storage capacity, color, or budget model?</h4>
+          <p class="text-xs text-blue-800">We receive daily fresh shipments from authorized national distributors. Message us directly to reserve your unit.</p>
+        </div>
+        <div class="flex items-center gap-3 shrink-0">
+          <a class="px-5 py-2.5 rounded-full bg-blue-600 text-white font-bold text-xs hover:bg-blue-700 transition-colors shadow-md" href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20am%20looking%20for%20a%20specific%20model" target="_blank" rel="noopener noreferrer">
+            Check Model Stock on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END: Mobile Collection Showcase Section -->
+
+  <!-- BEGIN: Accessories Section -->
+  <section class="py-20 bg-[#080C14] text-white border-t border-slate-800 relative" id="accessories">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Headline & Editorial Tagline -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="space-y-2">
+          <p class="text-xs font-bold uppercase tracking-widest text-blue-500">Small Details. Big Difference.</p>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight">
+            Original Accessories &amp; Audio.
+          </h2>
+          <p class="text-slate-400 max-w-2xl text-base">
+            Tested for safety, certified for high-speed protocols, and covered under official manufacturer warranties. Try and test them in-store before purchase.
+          </p>
+        </div>
+
+        <div class="w-full md:w-72">
+          <input type="text" id="acc-search-input" placeholder="Search accessories..." class="w-full pl-4 pr-4 py-2.5 rounded-full bg-slate-900 border border-slate-700 text-sm focus:outline-none focus:border-blue-500 text-white placeholder-slate-500" onkeyup="filterAccessories()">
+        </div>
+      </div>
+
+      <!-- Studio Showcase Featured Banner -->
+      <div class="bg-gradient-to-r from-slate-900 via-brand-dark to-slate-900 rounded-3xl p-8 sm:p-10 border border-slate-800 mb-12 shadow-2xl relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-7 space-y-4">
+            <span class="inline-block px-3 py-1 rounded-full text-[11px] font-semibold bg-blue-500/20 text-blue-300 border border-blue-500/30">Audiophile &amp; Power Standard</span>
+            <h3 class="text-2xl sm:text-3xl font-bold">Studio Sound &amp; Ultra-Fast GaN Architecture</h3>
+            <p class="text-slate-400 text-sm leading-relaxed">
+              We stock certified fast-charging bricks up to 120W PD, lossless wireless earbuds with Active Noise Cancellation, and military-grade drop protectors ready for instant trial in our store.
+            </p>
+            <div class="flex flex-wrap gap-4 pt-2">
+              <a class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white text-slate-950 font-bold text-xs hover:bg-slate-200 transition-colors shadow-lg" href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20would%20like%20to%20enquire%20about%20accessories" target="_blank" rel="noopener noreferrer">
+                <span>Explore Accessories on WhatsApp ↗</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Studio Asset Graphic -->
+          <div class="lg:col-span-5 flex justify-center lg:justify-end">
+            <div class="relative w-full max-w-md rounded-2xl overflow-hidden border border-blue-500/30 shadow-2xl group cursor-pointer" onclick="openLightbox('assets/images/powerbank_studio.jpg', 'Studio Grade GaN Power Architecture')">
+              <img src="assets/images/powerbank_studio.jpg" onerror="this.src='https://lh3.googleusercontent.com/aida/AEtjO1W0jiefWaLwDJT0OJkGH4roA_U3EuY93GWPvPi1sopwkkAHZ4VKNk9B17VcGAvhsMZtNOEIEI_61cYKQ31RQf7OGLH9EgU8SwSyRS6EqoM8PSJqXATUhq4Zvz309-tDf-X-wqZKACuiPKzBPVI5Mtk-X8NkkAWQ2MTwTVtrLwktfnS2ZGY-NHKdaBoGROEy719x-hp60zCUqR5waIoDZATWMxJumaljqc4BUD66nI1VV3788Pw_FKErIcY'" alt="Premium GaN Charger and Magnetic Power Bank Showcase" class="w-full h-56 sm:h-64 object-cover transform group-hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-gradient-to-t from-[#080C14] via-transparent to-transparent"></div>
+              <div class="absolute top-3 right-3 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md border border-blue-400/40 text-[10px] font-bold text-blue-300 shadow-lg flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
+                Studio Grade Accessories
+              </div>
+              <div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-xs text-slate-300 font-medium px-1">
+                <span class="bg-slate-900/90 px-2.5 py-1 rounded-lg border border-slate-700/80 text-[11px]">PD 67W GaN + MagSafe</span>
+                <span class="text-blue-400 text-[11px] font-semibold">Ready in Showroom</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live In-Store Accessories Grid (8 Authentic Items) -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="accessories-grid">
+        
+        <!-- Acc 1: Apple 20W USB-C Adapter -->
+        <div class="acc-card bg-[#0D1322] border border-slate-800 hover:border-blue-500/50 rounded-3xl p-4 flex flex-col justify-between group transition-all duration-300 shadow-xl" data-name="apple 20w usb-c power adapter charger iphone original">
+          <div class="relative h-56 rounded-2xl overflow-hidden bg-slate-900 mb-4 cursor-pointer" onclick="openLightbox('assets/images/store_photo_1.jpg', 'Apple 20W Original Adapter')">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCk83XW43kwoeZmjcIAmLYhO_LfyuM70mWOFlnzlObCZpARNR-_jpcv-c74N8KvdawfriilErT_uM5XEgfZ9cPl88Pv5k4eax2LJYDP3yUnD-2siTo0IeolAvJssREAmBYJH4FOsYV2EFrdpmYM4gcwlD87KvdSaTnmd7hp3nB9ebeKkf38Y5Iei4kDGPH90wkWqXsyrN4EJNs8n-tL0BiZme0qafOA94-lmZEBkq8XNE8qC4LmNxp_7JocFpElBGe6qA" alt="Apple 20W USB-C Power Adapter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-slate-700 text-[10px] font-bold text-white">Apple Original</div>
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-blue-600/90 text-white text-[10px] font-semibold">20W PD</div>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white leading-snug">Apple 20W USB-C Power Adapter</h4>
+            <p class="text-xs text-slate-400 mt-1">Genuine factory sealed packs with 1-Year Apple India warranty. Fast charges iPhone 12 to 16 series.</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-emerald-400 font-semibold">In Stock</span>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20is%20Apple%2020W%20Adapter%20in%20stock?" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-800 hover:bg-blue-600 text-white text-[11px] font-semibold transition-colors">
+              Enquire
+            </a>
+          </div>
+        </div>
+
+        <!-- Acc 2: Google 45W Fast Adapter -->
+        <div class="acc-card bg-[#0D1322] border border-slate-800 hover:border-blue-500/50 rounded-3xl p-4 flex flex-col justify-between group transition-all duration-300 shadow-xl" data-name="google 45w fast power adapter pps pixel charger">
+          <div class="relative h-56 rounded-2xl overflow-hidden bg-slate-900 mb-4 cursor-pointer" onclick="openLightbox('assets/images/store_photo_2.jpg', 'Google 45W Fast Adapter')">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2dUubvFACOuC5G4qus675_HyD6gHC3lDZ6k74l5ZClK4nMmU4vnbak7TsjTAiWDn0JCB0i4tRzk1LXzQjFsWAHX1_Dnaz0-EUMw5XLmi2Bu2d2ysUj3loSPuXkFHnRtdIpB5ME1MDo8i-vbVov-6UHY-1dmllchQoAMYWtSURqrd9cAYoqiGwoDvcBEF5Px0DZflWKzaa7BFQIRywFFjLvK1JDhl-3Y0vgLj-PqTClKSZ5dG76SK8odi6FZfHvRTdtg" alt="Google 45W Fast Charging USB-C Adapter" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-slate-700 text-[10px] font-bold text-white">Google Pixel</div>
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-blue-600/90 text-white text-[10px] font-semibold">45W PPS</div>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white leading-snug">Google 45W Fast Power Adapter</h4>
+            <p class="text-xs text-slate-400 mt-1">Official high-speed PPS charging for Pixel 9 Pro, 8 Pro, and flagship Type-C notebooks.</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-emerald-400 font-semibold">In Stock</span>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20is%20Google%2045W%20Adapter%20available?" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-800 hover:bg-blue-600 text-white text-[11px] font-semibold transition-colors">
+              Enquire
+            </a>
+          </div>
+        </div>
+
+        <!-- Acc 3: Stuffcool Click 10 MagSafe Bank -->
+        <div class="acc-card bg-[#0D1322] border border-slate-800 hover:border-blue-500/50 rounded-3xl p-4 flex flex-col justify-between group transition-all duration-300 shadow-xl" data-name="stuffcool click 10 wireless magsafe powerbank 10000mah">
+          <div class="relative h-56 rounded-2xl overflow-hidden bg-slate-900 mb-4 cursor-pointer" onclick="openLightbox('assets/images/store_photo_3.jpg', 'Stuffcool Click 10 MagSafe Power Bank')">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC6-M5f-iK5Yv1y3Z-9RKm2hBa1PxtewKExheO3E3ZKQTBuEWgwrBx0LLbnQJ0z4hbEyytG9YgbXKWlXc0ukbshSrNMFxhCGwAU4_FEbxooh2L76Cy3tn1yOIRinaGEGY1Ufd1Ile6aDvRa1wxrQ1xEqAC_brsfESL46mMpupnf-ig_nWHVNibil55vz8fYxGw9kF8o8RgZkIHGWiygyIA4V-wAuvbJMR_uN3ZM3udJPFjHJ3Eiz76jPlyDMlujEBSyw" alt="Stuffcool Click 10 15W Magnetic Powerbank" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-blue-400/40 text-[10px] font-bold text-blue-300">MagSafe Slim</div>
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-slate-950/90 text-white text-[10px] font-semibold">10,000 mAh</div>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white leading-snug">Stuffcool Click 10 Wireless Bank</h4>
+            <p class="text-xs text-slate-400 mt-1">15W strong magnetic snap-on wireless power bank with digital display for iPhone &amp; Qi devices.</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-emerald-400 font-semibold">Showroom Demo</span>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20tell%20me%20about%20Stuffcool%20Click%2010%20Powerbank" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-800 hover:bg-blue-600 text-white text-[11px] font-semibold transition-colors">
+              Enquire
+            </a>
+          </div>
+        </div>
+
+        <!-- Acc 4: Portronics Power Shutter Pro 35W -->
+        <div class="acc-card bg-[#0D1322] border border-slate-800 hover:border-blue-500/50 rounded-3xl p-4 flex flex-col justify-between group transition-all duration-300 shadow-xl" data-name="portronics power shutter pro 35w fast power bank lanyard">
+          <div class="relative h-56 rounded-2xl overflow-hidden bg-slate-900 mb-4 cursor-pointer" onclick="openLightbox('assets/images/store_photo_4.jpg', 'Portronics Power Shutter Pro 35W')">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQR_z2Tn7RLdwc4_jZ7e0TkUMMZXczGNZ33cNOfXR2x7A3nZJBaheronSflPZgh9jUhEug_BawXdHqFwokCZ_0f40T1lJTZyub8O-nS7JBG18lx8XZJBdGdO6_reSahooQGcEDeTqETfUR_I75M1ZqqZ3LMVC0-narCxsw-MjY74uAhATn1i1KOkDsaIJh8yww0hPPHUzv0_VuXfEpVQM6doeP2g3XNSnU1Vu4NI9Yu3vFVonaHx6CqjfDofcK90Wtug" alt="Portronics Power Shutter Pro 35W Power Bank" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-slate-700 text-[10px] font-bold text-white">Portronics Pro</div>
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-blue-600/90 text-white text-[10px] font-semibold">35W Fast</div>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white leading-snug">Portronics Power Shutter Pro</h4>
+            <p class="text-xs text-slate-400 mt-1">35W high-speed charging 10,000mAh pack with built-in Type-C lanyard cable &amp; digital percentage.</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-emerald-400 font-semibold">In Stock</span>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20tell%20me%20about%20Portronics%20Power%20Shutter%20Pro" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-800 hover:bg-blue-600 text-white text-[11px] font-semibold transition-colors">
+              Enquire
+            </a>
+          </div>
+        </div>
+
+        <!-- Acc 5: Portronics Shutter Air Slim -->
+        <div class="acc-card bg-[#0D1322] border border-slate-800 hover:border-blue-500/50 rounded-3xl p-4 flex flex-col justify-between group transition-all duration-300 shadow-xl" data-name="portronics power shutter air 10k wireless magnetic powerbank">
+          <div class="relative h-56 rounded-2xl overflow-hidden bg-slate-900 mb-4 cursor-pointer" onclick="openLightbox('assets/images/store_photo_5.jpg', 'Portronics Power Shutter Air 10K')">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBF-40rQkYP4n7LhGGwWSVHOKUSKj1YJatY5RwxXIBkadw3pbD3ZNcVG8m6dHjvh5qPvvns9gLbhVkU5ZV9Vgh2WHOgFevoiAz4Fx6Pqd3IH0_1yGXjL2DLM7zm_LBShLD5haaxqpc-AUIFYG8Lp4m_xy3AJzFK-uyrD5tFnQxQjPGr3olINA4Dt58dEbO9f0yRUamuG2Uq-FQnPh0G0Se_oajQcrS30GmoiG8tCafVhCstLYFCG0KkBsFZrZh_yN1KRw" alt="Portronics Power Shutter Air 10K Wireless Magnetic Powerbank" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-slate-700 text-[10px] font-bold text-white">Metallic Slim</div>
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-blue-600/90 text-white text-[10px] font-semibold">22.5W Output</div>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white leading-snug">Portronics Power Shutter Air 10K</h4>
+            <p class="text-xs text-slate-400 mt-1">Ultra-slim wireless magnetic power bank with integrated loop cord. Fits seamlessly behind your phone.</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-emerald-400 font-semibold">In Stock</span>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20Portronics%20Power%20Shutter%20Air%20enquiry" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-800 hover:bg-blue-600 text-white text-[11px] font-semibold transition-colors">
+              Enquire
+            </a>
+          </div>
+        </div>
+
+        <!-- Acc 6: iPhone MagSafe & Armor Cases Wall -->
+        <div class="acc-card bg-[#0D1322] border border-slate-800 hover:border-blue-500/50 rounded-3xl p-4 flex flex-col justify-between group transition-all duration-300 shadow-xl" data-name="iphone magsafe armor designer case covers glass">
+          <div class="relative h-56 rounded-2xl overflow-hidden bg-slate-900 mb-4 cursor-pointer" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuAEIqxHaWPMScBXPL5G3gUU7v3VY3resMoDgnmDxR5cInTNmyb0ahE6H4DIK9G6VYR4WyTON_poBWYkaTtxLFxxphAUf10yngPBM2pWFe6lYElcBC1RONiSQKZuf81v2ZN-3lUbQf1o2oaens-2SvqFh4HwEvKDw3YxKQFJeViVfQSjhWoW0-5NpCegVMlVHF4iW0fs3KrFtV4P-gCy0i5RIUTtRHHecB98c0cVzSXzN0IGxdbCJYy1DCdCThDdkknNYA', 'iPhone Case Display Wall')">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEIqxHaWPMScBXPL5G3gUU7v3VY3resMoDgnmDxR5cInTNmyb0ahE6H4DIK9G6VYR4WyTON_poBWYkaTtxLFxxphAUf10yngPBM2pWFe6lYElcBC1RONiSQKZuf81v2ZN-3lUbQf1o2oaens-2SvqFh4HwEvKDw3YxKQFJeViVfQSjhWoW0-5NpCegVMlVHF4iW0fs3KrFtV4P-gCy0i5RIUTtRHHecB98c0cVzSXzN0IGxdbCJYy1DCdCThDdkknNYA" alt="iPhone MagSafe and Designer Cases Wall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-blue-400/40 text-[10px] font-bold text-blue-300">iPhone Wall</div>
+            <div class="absolute bottom-2.5 right-2.5 px-2 py-0.5 rounded-md bg-slate-950/90 text-white text-[10px] font-semibold">100+ Styles</div>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white leading-snug">iPhone MagSafe &amp; Armor Cases</h4>
+            <p class="text-xs text-slate-400 mt-1">From frosted AG glass, matte carbon-fiber, to crystal clear with built-in camera lens guards.</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-emerald-400 font-semibold">Ready to Try</span>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20want%20to%20check%20iPhone%20cases%20collection" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-800 hover:bg-blue-600 text-white text-[11px] font-semibold transition-colors">
+              Enquire
+            </a>
+          </div>
+        </div>
+
+        <!-- Acc 7: Android Armor Series -->
+        <div class="acc-card bg-[#0D1322] border border-slate-800 hover:border-blue-500/50 rounded-3xl p-4 flex flex-col justify-between group transition-all duration-300 shadow-xl" data-name="samsung galaxy android armor cases covers tempered glass">
+          <div class="relative h-56 rounded-2xl overflow-hidden bg-slate-900 mb-4 cursor-pointer" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuAQE0rEf46GKMhPl1i36Ch_ysSqzbOHX51pw-vBDlb_-12u-2HPg3VwqSqVnRZNErJKUa7qdISFxavMRFck6C1U2mt0ufxC635jahgMHC5A8602em-YB6TaBcMQe3Y7NVpmZsD3cDJEtYOBGPYXqTgQJ1jINqonsvXTCrcPCSQfTA23sYoraf7yeDWiTEob2Kykp48_O3qoPPy8v6MhBJky8mR3z3f2QFBVLBYGMq5q-T1GmELxjgd4kfL33-_-YpLQ3Q', 'Android & Galaxy Armor Wall')">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQE0rEf46GKMhPl1i36Ch_ysSqzbOHX51pw-vBDlb_-12u-2HPg3VwqSqVnRZNErJKUa7qdISFxavMRFck6C1U2mt0ufxC635jahgMHC5A8602em-YB6TaBcMQe3Y7NVpmZsD3cDJEtYOBGPYXqTgQJ1jINqonsvXTCrcPCSQfTA23sYoraf7yeDWiTEob2Kykp48_O3qoPPy8v6MhBJky8mR3z3f2QFBVLBYGMq5q-T1GmELxjgd4kfL33-_-YpLQ3Q" alt="Samsung and Android Cases Display" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-emerald-400/40 text-[10px] font-bold text-emerald-300">Android Wall</div>
+            <div class="absolute bottom-2.5 right-2.5 px-2.5 py-0.5 rounded-md bg-slate-950/90 text-white text-[10px] font-semibold">Samsung • vivo</div>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white leading-snug">Galaxy &amp; Android Armor Series</h4>
+            <p class="text-xs text-slate-400 mt-1">Precision drop-tested bumpers, 2.0mm acrylic clear cases, and magnetic covers for S24, Vivo &amp; OnePlus.</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-emerald-400 font-semibold">Ready to Try</span>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20what%20cases%20do%20you%20have%20for%20Samsung/Android?" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-800 hover:bg-blue-600 text-white text-[11px] font-semibold transition-colors">
+              Enquire
+            </a>
+          </div>
+        </div>
+
+        <!-- Acc 8: Portronics MODESK Heavy Duty Stand -->
+        <div class="acc-card bg-[#0D1322] border border-slate-800 hover:border-blue-500/50 rounded-3xl p-4 flex flex-col justify-between group transition-all duration-300 shadow-xl" data-name="portronics modesk universal mobile stand tablet desk mount">
+          <div class="relative h-56 rounded-2xl overflow-hidden bg-slate-900 mb-4 cursor-pointer" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuAznhmV55yawRLFEhMuPAILLT76WOl1xrXMyX4UkWZVrdbtXgpjIjuG8q7kaoheAJqFX0GMhqYCgFV9LLJZtS_lX10RsZpvm6n0mhUOQBwR7MVGDYEdmAeUTkoN0o7jt26N9WGfpbQuWKdRbjpFDs99lvqYO4EmGChOH7feIinCNUtIQaxjc2ZGi2wZm8TsEaWJ2VFkQEt1ZzQYlB4pGKccGQa5a2JtpmUBg1I00szCzHpDvNl2JzY-nJ9LDKlH9zq5bg', 'Portronics Modesk Stand')">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAznhmV55yawRLFEhMuPAILLT76WOl1xrXMyX4UkWZVrdbtXgpjIjuG8q7kaoheAJqFX0GMhqYCgFV9LLJZtS_lX10RsZpvm6n0mhUOQBwR7MVGDYEdmAeUTkoN0o7jt26N9WGfpbQuWKdRbjpFDs99lvqYO4EmGChOH7feIinCNUtIQaxjc2ZGi2wZm8TsEaWJ2VFkQEt1ZzQYlB4pGKccGQa5a2JtpmUBg1I00szCzHpDvNl2JzY-nJ9LDKlH9zq5bg" alt="Portronics Modesk Universal Mobile Stand" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <div class="absolute top-2.5 left-2.5 px-2.5 py-0.5 rounded-full bg-slate-950/85 backdrop-blur-md border border-slate-700 text-[10px] font-bold text-white">Desk Accessory</div>
+            <div class="absolute bottom-2.5 right-2.5 px-2.5 py-0.5 rounded-md bg-slate-950/90 text-white text-[10px] font-semibold">Heavy Duty</div>
+          </div>
+          <div>
+            <h4 class="text-sm font-bold text-white leading-snug">Portronics MODESK Universal Stand</h4>
+            <p class="text-xs text-slate-400 mt-1">Anti-skid premium metal desktop phone and tablet stand with ergonomic viewing angle and cable cutout.</p>
+          </div>
+          <div class="pt-4 mt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[11px] text-emerald-400 font-semibold">In Stock</span>
+            <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20is%20Portronics%20Modesk%20Stand%20available?" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-full bg-slate-800 hover:bg-blue-600 text-white text-[11px] font-semibold transition-colors">
+              Enquire
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END: Accessories Section -->
+
+  <!-- BEGIN: In-Store Showroom Photo Gallery Section -->
+  <section class="py-20 bg-[#0A0E18] text-white border-t border-slate-800" id="gallery">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+        <div class="space-y-2">
+          <p class="text-xs font-bold uppercase tracking-widest text-blue-500">Real In-Store Experience</p>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight">
+            Take a look inside Chamunda Mobile.
+          </h2>
+          <p class="text-slate-400 max-w-2xl text-base">
+            Glimpses from our Sector-8 showroom. Modern organized display racks, dedicated live demonstration zone, and complete accessories counter.
+          </p>
+        </div>
+        <div class="shrink-0 flex items-center gap-2">
+          <span class="text-xs text-slate-400">📍 Shop No. 10, Maruti Enclave, Sector-8, Airoli</span>
+        </div>
+      </div>
+
+      <!-- Real Showroom Gallery Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        
+        <div class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 cursor-pointer h-60" onclick="openLightbox('assets/images/store_photo_1.jpg', 'Chamunda Mobile Showroom Interior &amp; Display')">
+          <img src="assets/images/store_photo_1.jpg" alt="Showroom Storefront" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-xs font-semibold text-white">
+            <span class="text-[10px] text-blue-400 block font-normal">Showroom Display</span>
+            Flagship Devices Counter
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 cursor-pointer h-60" onclick="openLightbox('assets/images/store_photo_2.jpg', 'Original Fast Charging Accessories Rack')">
+          <img src="assets/images/store_photo_2.jpg" alt="Original Adapters Racks" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-xs font-semibold text-white">
+            <span class="text-[10px] text-blue-400 block font-normal">Genuine Gear</span>
+            Original Power Adapters
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 cursor-pointer h-60" onclick="openLightbox('assets/images/store_photo_3.jpg', 'Premium Cases &amp; MagSafe Covers Section')">
+          <img src="assets/images/store_photo_3.jpg" alt="Accessories Wall" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-xs font-semibold text-white">
+            <span class="text-[10px] text-blue-400 block font-normal">Protection Wall</span>
+            100+ Designer Cases
+          </div>
+        </div>
+
+        <div class="group relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 cursor-pointer h-60" onclick="openLightbox('assets/images/store_photo_4.jpg', 'High-Speed MagSafe &amp; GaN Charging Collection')">
+          <img src="assets/images/store_photo_4.jpg" alt="Fast Chargers Rack" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 group-hover:opacity-100 transition-opacity"></div>
+          <div class="absolute bottom-3 left-3 right-3 text-xs font-semibold text-white">
+            <span class="text-[10px] text-blue-400 block font-normal">Live Tested</span>
+            GaN &amp; MagSafe Hubs
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END: Gallery Section -->
+
+  <!-- BEGIN: Interactive Smart Tools (EMI & Exchange Calculator) -->
+  <section class="py-20 bg-slate-900 text-slate-100 border-t border-slate-800" id="calculator">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-3">
+        <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold bg-blue-600/20 text-blue-400 border border-blue-500/30">
+          Smart In-Store Calculators
+        </span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white">
+          Plan Your Upgrade with Transparency.
+        </h2>
+        <p class="text-slate-400 text-base">
+          Check your monthly installment options or estimate your old phone's trade-in value before stepping into our Airoli showroom.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        
+        <!-- Tool 1: Interactive Phone EMI Calculator -->
+        <div class="p-8 rounded-3xl bg-[#0D1322] border border-slate-800 shadow-xl space-y-6">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-blue-600/20 border border-blue-500/40 text-blue-400 flex items-center justify-center font-bold">
+                ₹
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white">Smartphone EMI Calculator</h3>
+                <p class="text-xs text-slate-400">Zero-down finance schemes available in store</p>
+              </div>
+            </div>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-blue-950 text-blue-400 border border-blue-800">0% EMI Available</span>
+          </div>
+
+          <!-- Price Slider -->
+          <div class="space-y-2">
+            <div class="flex justify-between items-center text-xs font-semibold">
+              <span class="text-slate-400">Device Price</span>
+              <span class="text-white text-base font-bold" id="emi-price-val">₹ 75,000</span>
+            </div>
+            <input type="range" id="emi-price" min="10000" max="180000" step="1000" value="75000" class="w-full accent-blue-600" oninput="calculateEMI()">
+            <div class="flex justify-between text-[10px] text-slate-500">
+              <span>₹10,000</span>
+              <span>₹95,000</span>
+              <span>₹1,80,000</span>
+            </div>
+          </div>
+
+          <!-- Down Payment Slider -->
+          <div class="space-y-2">
+            <div class="flex justify-between items-center text-xs font-semibold">
+              <span class="text-slate-400">Down Payment</span>
+              <span class="text-emerald-400 text-sm font-bold" id="emi-dp-val">₹ 15,000 (20%)</span>
+            </div>
+            <input type="range" id="emi-dp" min="0" max="60000" step="1000" value="15000" class="w-full accent-emerald-500" oninput="calculateEMI()">
+            <div class="flex justify-between text-[10px] text-slate-500">
+              <span>₹0 (Zero Down)</span>
+              <span>₹30,000</span>
+              <span>₹60,000</span>
+            </div>
+          </div>
+
+          <!-- Tenure Buttons -->
+          <div class="space-y-2">
+            <label class="text-xs font-semibold text-slate-400 block">Loan Tenure</label>
+            <div class="grid grid-cols-4 gap-2 text-xs font-bold" id="emi-tenures">
+              <button onclick="setTenure(6, this)" class="emi-tenure-btn py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700">6 Mos</button>
+              <button onclick="setTenure(9, this)" class="emi-tenure-btn py-2 rounded-xl bg-blue-600 text-white shadow-md">9 Mos</button>
+              <button onclick="setTenure(12, this)" class="emi-tenure-btn py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700">12 Mos</button>
+              <button onclick="setTenure(24, this)" class="emi-tenure-btn py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700">24 Mos</button>
+            </div>
+          </div>
+
+          <!-- EMI Result Card -->
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-blue-950/80 to-[#0F1E36] border border-blue-900/60 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-slate-400 block">Estimated Monthly EMI</span>
+              <span class="text-2xl sm:text-3xl font-extrabold text-blue-400" id="emi-monthly-val">₹ 7,080 / mo</span>
+              <span class="text-[10px] text-slate-400 block mt-0.5" id="emi-loan-val">Loan: ₹60,000 • Paperless in 15 mins</span>
+            </div>
+            <button onclick="applyEMIWhatsApp()" class="px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs shadow-md transition-colors">
+              Apply on WhatsApp ↗
+            </button>
+          </div>
+        </div>
+
+        <!-- Tool 2: Old Phone Exchange Value Estimator -->
+        <div class="p-8 rounded-3xl bg-[#0D1322] border border-slate-800 shadow-xl space-y-6">
+          <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center font-bold">
+                ⇄
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-white">Old Phone Trade-in Estimator</h3>
+                <p class="text-xs text-slate-400">Instant trade-in discount on your new phone</p>
+              </div>
+            </div>
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-950 text-emerald-400 border border-emerald-800">+₹2,000 Store Bonus</span>
+          </div>
+
+          <!-- Select Brand -->
+          <div class="space-y-1.5">
+            <label class="text-xs font-semibold text-slate-400">Current Device Brand</label>
+            <select id="trade-brand" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-blue-500" onchange="calculateTradeIn()">
+              <option value="apple">Apple (iPhone 11 / 12 / 13 / 14 / 15)</option>
+              <option value="samsung">Samsung (Galaxy S, Z Fold/Flip, A Series)</option>
+              <option value="oneplus">OnePlus (9 / 10 / 11 / Nord Series)</option>
+              <option value="vivo_oppo">vivo / OPPO / Realme</option>
+              <option value="xiaomi">Xiaomi / Redmi / Poco</option>
+            </select>
+          </div>
+
+          <!-- Select Condition -->
+          <div class="space-y-1.5">
+            <label class="text-xs font-semibold text-slate-400">Physical &amp; Screen Condition</label>
+            <select id="trade-condition" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-blue-500" onchange="calculateTradeIn()">
+              <option value="flawless">Flawless / Like New (No scratches, all functional)</option>
+              <option value="good" selected>Good Condition (Minor normal body wear, clean screen)</option>
+              <option value="scratched">Average (Noticeable scratches, working screen)</option>
+              <option value="cracked">Screen Glass Cracked / Heavy Dents</option>
+            </select>
+          </div>
+
+          <!-- Working Accessories Included -->
+          <div class="space-y-2 pt-1">
+            <label class="text-xs font-semibold text-slate-400 block">Available Accessories</label>
+            <div class="grid grid-cols-2 gap-2 text-xs">
+              <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-900 border border-slate-800 cursor-pointer">
+                <input type="checkbox" id="trade-box" checked class="rounded text-blue-600 focus:ring-0" onchange="calculateTradeIn()">
+                <span class="text-slate-300">Original Box</span>
+              </label>
+              <label class="flex items-center gap-2 p-2.5 rounded-xl bg-slate-900 border border-slate-800 cursor-pointer">
+                <input type="checkbox" id="trade-bill" checked class="rounded text-blue-600 focus:ring-0" onchange="calculateTradeIn()">
+                <span class="text-slate-300">Original Invoice</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Trade-in Result Card -->
+          <div class="p-4 rounded-2xl bg-gradient-to-r from-emerald-950/80 to-[#0A1A22] border border-emerald-900/60 flex items-center justify-between">
+            <div>
+              <span class="text-xs text-slate-400 block">Estimated Trade-in Value</span>
+              <span class="text-2xl sm:text-3xl font-extrabold text-emerald-400" id="trade-val-text">₹ 18,500 – ₹ 22,000</span>
+              <span class="text-[10px] text-emerald-300 block mt-0.5">Includes ₹2,000 Festive Showroom Exchange Bonus</span>
+            </div>
+            <button onclick="lockTradeInWhatsApp()" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-md transition-colors">
+              Lock Quote ↗
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END: Interactive Smart Tools -->
+
+  <!-- BEGIN: About Us Section -->
+  <section class="py-20 bg-slate-900 text-slate-100 border-t border-slate-800" id="about">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <!-- Left: Story & Values -->
+        <div class="lg:col-span-7 space-y-6">
+          <span class="inline-block px-3.5 py-1 rounded-full text-xs font-semibold bg-blue-600/20 text-blue-400 border border-blue-500/30">
+            About Chamunda Mobile
+          </span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-white leading-tight">
+            Your trusted local destination for all things mobile in Airoli.
+          </h2>
+          <p class="text-slate-300 text-base leading-relaxed">
+            We believe buying a phone is deeply personal. You shouldn't have to guess how a display looks under bright sunlight or whether a device comfortably fits your palm. At Chamunda Mobile, our showroom is created for hands-on discovery, transparent prices, and honest conversations.
+          </p>
+
+          <!-- 3 Trust Pillars -->
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-9 h-9 rounded-lg bg-blue-600/20 border border-blue-500/40 flex items-center justify-center shrink-0 text-blue-400 mt-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">Hands-on Device Experience</h4>
+                <p class="text-slate-400 text-xs mt-0.5">Explore active display units before you make your final selection.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-9 h-9 rounded-lg bg-blue-600/20 border border-blue-500/40 flex items-center justify-center shrink-0 text-blue-400 mt-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">Impartial Tech Guidance</h4>
+                <p class="text-slate-400 text-xs mt-0.5">We recommend devices that match your actual everyday usage and requirements without high-pressure sales.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4">
+              <div class="w-9 h-9 rounded-lg bg-blue-600/20 border border-blue-500/40 flex items-center justify-center shrink-0 text-blue-400 mt-1">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-white font-bold text-sm">End-to-End Setup &amp; Data Transfer</h4>
+                <p class="text-slate-400 text-xs mt-0.5">Walk out with your WhatsApp, photos, contacts, and apps flawlessly transferred to your new phone without data loss.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Modern Store Counter Showcase Mockup -->
+        <div class="lg:col-span-5">
+          <div class="bg-gradient-to-tr from-slate-950 to-slate-800 p-3 rounded-3xl border border-slate-700 shadow-2xl relative">
+            <div class="bg-[#0B1120] rounded-2xl p-6 border border-slate-800 space-y-6">
+              <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                <div class="flex items-center gap-3">
+                  <div class="w-3 h-3 rounded-full bg-emerald-500 animate-pulse"></div>
+                  <span class="text-xs font-semibold uppercase tracking-wider text-slate-300">Showroom Status</span>
+                </div>
+                <span class="text-xs font-mono text-blue-400">Open Daily 10 AM - 9:30 PM</span>
+              </div>
+
+              <!-- Store Experience Metric Blocks -->
+              <div class="grid grid-cols-2 gap-3 text-center">
+                <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <p class="text-2xl font-extrabold text-white">100%</p>
+                  <p class="text-[11px] text-slate-400">Brand Sealed Packs</p>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <p class="text-2xl font-extrabold text-blue-400">0 min</p>
+                  <p class="text-[11px] text-slate-400">Waiting for Demos</p>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <p class="text-2xl font-extrabold text-amber-400">4.9 ★</p>
+                  <p class="text-[11px] text-slate-400">350+ Google Reviews</p>
+                </div>
+                <div class="p-3 rounded-xl bg-slate-900/90 border border-slate-800">
+                  <p class="text-2xl font-extrabold text-emerald-400">10+ Yrs</p>
+                  <p class="text-[11px] text-slate-400">Airoli Community Trust</p>
+                </div>
+              </div>
+
+              <div class="pt-2">
+                <a href="#visit" class="w-full block text-center py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
+                  Get Showroom Directions
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END: About Us Section -->
+
+  <!-- BEGIN: Reviews Section -->
+  <section class="py-20 bg-[#080C14] text-white border-t border-slate-800 relative overflow-hidden" id="reviews">
+    <div class="absolute -top-32 left-1/4 w-[500px] h-[500px] bg-blue-600/10 rounded-full blur-[128px] pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <!-- Section Header & Rating Summary Card -->
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-14">
+        <div class="space-y-3 max-w-2xl">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-600/15 border border-blue-500/30 text-blue-400 text-xs font-semibold tracking-wider uppercase">
+            <svg class="w-3.5 h-3.5 fill-current text-amber-400" viewBox="0 0 24 24">
+              <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
+            </svg>
+            <span>Google Verified Customer Reviews</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-white leading-tight">
+            Trusted by Airoli &amp; <span class="text-blue-500">Navi Mumbai.</span>
+          </h2>
+          <p class="text-slate-400 text-base leading-relaxed">
+            Real feedback from customers who count on Chamunda Mobile for genuine smartphones, fast data transfer, and original mobile accessories.
+          </p>
+        </div>
+
+        <!-- Google Rating Stat Badge Card -->
+        <div class="bg-gradient-to-br from-[#0F1E36] to-[#0A1322] border border-blue-900/60 rounded-3xl p-6 sm:px-8 sm:py-6 shadow-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shrink-0">
+          <div class="space-y-1">
+            <div class="flex items-center gap-3">
+              <span class="text-4xl font-extrabold text-white tracking-tight">4.9</span>
+              <div class="space-y-1">
+                <div class="flex items-center text-amber-400 text-sm gap-0.5">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+                <span class="text-[11px] font-medium text-slate-300 block">Based on 350+ Google Reviews</span>
+              </div>
+            </div>
+            <p class="text-[11px] text-emerald-400 font-semibold flex items-center gap-1.5 pt-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+              100% Genuine Stock Guarantee
+            </p>
+          </div>
+          <div class="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+            <button onclick="openWriteReviewModal()" class="inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs border border-slate-700 transition-colors shadow-md">
+              <span>Write a Review</span>
+            </button>
+            <a href="https://share.google/gTDj80DiAmwo7Qj4M" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs transition-colors shadow-md shrink-0">
+              <span>View All on Google</span>
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Verified Google Reviews Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12" id="reviews-grid">
+        
+        <!-- Review 1 -->
+        <div class="p-6 rounded-3xl bg-[#0D1322] border border-slate-800 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-500 text-white font-bold flex items-center justify-center text-sm shadow-md">
+                  RS
+                </div>
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <h4 class="text-sm font-bold text-white">Rahul Sharma</h4>
+                    <svg class="w-3.5 h-3.5 fill-blue-400" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                  </div>
+                  <span class="text-[11px] text-amber-400 font-medium block">Local Guide • 45 reviews</span>
+                </div>
+              </div>
+              <svg class="w-4 h-4 fill-slate-500" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"></path></svg>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex text-amber-400 text-xs">★★★★★</div>
+              <span class="text-[11px] text-slate-500">2 weeks ago</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              “Purchased the new vivo X-series here. Excellent pricing compared to online, and they transferred all my 80GB of photos and WhatsApp data seamlessly without losing anything! Highly recommend Chamunda Mobile.”
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[10px] font-semibold text-blue-400 bg-blue-950/80 px-2.5 py-1 rounded-full border border-blue-900/60">Smartphone Upgrade</span>
+            <span class="text-[10px] text-slate-500 font-medium">Verified Buyer</span>
+          </div>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="p-6 rounded-3xl bg-[#0D1322] border border-slate-800 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-pink-600 to-rose-400 text-white font-bold flex items-center justify-center text-sm shadow-md">
+                  PP
+                </div>
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <h4 class="text-sm font-bold text-white">Pooja Patil</h4>
+                    <svg class="w-3.5 h-3.5 fill-blue-400" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                  </div>
+                  <span class="text-[11px] text-slate-400 font-medium block">Airoli Resident</span>
+                </div>
+              </div>
+              <svg class="w-4 h-4 fill-slate-500" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"></path></svg>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex text-amber-400 text-xs">★★★★★</div>
+              <span class="text-[11px] text-slate-500">3 weeks ago</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              “Best mobile shop in Airoli Sector 8! Very polite staff. Guided me between Samsung S24 and OnePlus without pushing any brand. Got authentic accessories and tempered glass installed perfectly.”
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[10px] font-semibold text-emerald-400 bg-emerald-950/80 px-2.5 py-1 rounded-full border border-emerald-900/60">In-Store Advice</span>
+            <span class="text-[10px] text-slate-500 font-medium">Verified Buyer</span>
+          </div>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="p-6 rounded-3xl bg-[#0D1322] border border-slate-800 hover:border-blue-500/40 transition-all duration-300 flex flex-col justify-between space-y-4">
+          <div class="space-y-3">
+            <div class="flex items-start justify-between">
+              <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 text-white font-bold flex items-center justify-center text-sm shadow-md">
+                  AD
+                </div>
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <h4 class="text-sm font-bold text-white">Amit Deshmukh</h4>
+                    <svg class="w-3.5 h-3.5 fill-blue-400" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                  </div>
+                  <span class="text-[11px] text-amber-400 font-medium block">Local Guide • 18 reviews</span>
+                </div>
+              </div>
+              <svg class="w-4 h-4 fill-slate-500" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"></path></svg>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="flex text-amber-400 text-xs">★★★★★</div>
+              <span class="text-[11px] text-slate-500">1 month ago</span>
+            </div>
+            <p class="text-xs text-slate-300 leading-relaxed">
+              “I bought Apple iPhone 15 with zero-down finance scheme. Super smooth paperless process in just 15 minutes. Genuine sealed box with bill and warranty.”
+            </p>
+          </div>
+          <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-[10px] font-semibold text-blue-400 bg-blue-950/80 px-2.5 py-1 rounded-full border border-blue-900/60">Finance &amp; EMI</span>
+            <span class="text-[10px] text-slate-500 font-medium">Verified Buyer</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Google Review Submission CTA Banner -->
+      <div class="bg-gradient-to-r from-slate-900 via-[#0B1120] to-slate-900 border border-slate-800 rounded-3xl p-6 sm:p-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+        <div class="flex items-center gap-4 text-center sm:text-left">
+          <div class="w-12 h-12 rounded-2xl bg-white/10 flex items-center justify-center shrink-0 mx-auto sm:mx-0">
+            <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24"><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"></path></svg>
+          </div>
+          <div>
+            <h4 class="text-base font-bold text-white">Visited Chamunda Mobile recently?</h4>
+            <p class="text-xs text-slate-400 mt-0.5">Share your in-store experience with the Navi Mumbai community on Google or write a quick review right here.</p>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row gap-3 w-full sm:w-auto">
+          <button onclick="openWriteReviewModal()" class="px-5 py-3 rounded-full bg-slate-800 hover:bg-slate-700 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
+            Write Review
+          </button>
+          <a href="https://share.google/gTDj80DiAmwo7Qj4M" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full bg-white hover:bg-slate-100 text-slate-950 font-bold text-xs tracking-wider uppercase transition-colors shadow-md">
+            <span>Google Review ↗</span>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- END: Reviews Section -->
+
+  <!-- BEGIN: Visit & Contact Section -->
+  <section class="py-20 bg-brand-lightBg text-slate-900 relative" id="visit">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <!-- Section Label & Headline -->
+      <div class="space-y-2 mb-12">
+        <p class="text-xs font-bold uppercase tracking-widest text-blue-600">Visit Us</p>
+        <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-950">
+          Let’s find your next phone.
+        </h2>
+        <p class="text-slate-600 text-base">
+          Visit Chamunda Mobile to explore the entire collection hands-on. Conveniently located opposite Apple Hospital in Airoli Sector-8.
+        </p>
+      </div>
+
+      <!-- Split Map & Info Layout -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+        
+        <!-- Left: Showroom Details & Direct Contact Info -->
+        <div class="lg:col-span-5 bg-white rounded-3xl p-8 sm:p-10 border border-slate-200/90 shadow-subtle flex flex-col justify-between space-y-8">
+          <div class="space-y-6">
+            <!-- Address Block -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 border border-blue-100">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Showroom Address</h4>
+                <p class="text-sm font-semibold text-slate-900 mt-1 leading-relaxed">
+                  Chamunda Mobile Showroom<br>
+                  Shop No. 10, Plot No. 9, Maruti Enclave CHS. Ltd.,<br>
+                  Opp. Apple Hospital, Sector-8, Airoli,<br>
+                  Navi Mumbai – 400708
+                </p>
+                <button onclick="copyAddress()" class="mt-2 text-xs text-blue-600 hover:text-blue-800 font-semibold inline-flex items-center gap-1">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                  Copy Full Address
+                </button>
+              </div>
+            </div>
+
+            <!-- Operating Hours Block -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 border border-blue-100">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Showroom Hours</h4>
+                <p class="text-sm font-semibold text-slate-900 mt-1">Monday – Sunday</p>
+                <p class="text-xs text-slate-500 font-medium">10:00 AM – 9:30 PM (Open All 7 Days)</p>
+              </div>
+            </div>
+
+            <!-- Direct Contact Block -->
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 border border-blue-100">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+              </div>
+              <div>
+                <h4 class="text-xs font-bold uppercase tracking-wider text-slate-400">Direct Showroom Lines</h4>
+                <p class="text-sm font-semibold text-slate-900 mt-1">
+                  <a href="tel:+917620575529" class="hover:text-blue-600 transition-colors font-bold">+91 76205 75529</a> 
+                  <span class="text-slate-400 font-normal">/</span> 
+                  <a href="tel:+918690689207" class="hover:text-blue-600 transition-colors font-bold">+91 86906 89207</a>
+                </p>
+                <p class="text-xs text-slate-500 font-medium">Instant replies on WhatsApp during store hours</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Action Buttons -->
+          <div class="flex flex-wrap sm:flex-nowrap gap-3 pt-4 border-t border-slate-100">
+            <a class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs tracking-wider uppercase transition-colors shadow-md" href="https://maps.app.goo.gl/btTZYH5aXQMzb6ZX8" rel="noopener noreferrer" target="_blank">
+              <span>Get Directions</span>
+              <svg class="w-3.5 h-3.5 stroke-[2.5]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+            <a class="w-full sm:w-auto flex-1 inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-slate-50 text-slate-900 border border-slate-300 font-semibold text-xs tracking-wider uppercase transition-colors" href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20would%20like%20to%20enquire%20about%20store%20timings%20and%20directions" rel="noopener noreferrer" target="_blank">
+              <svg class="w-4 h-4 fill-emerald-600" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.086.086-.177.18-.076.353.101.173.45 0.742.966 1.202.664.591 1.224.774 1.397.86.173.086.274.072.375-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"></path></svg>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: Modern Vector Map Graphic with Chamunda Pin + Toggle to Live Map -->
+        <div class="lg:col-span-7 bg-white rounded-3xl border border-slate-200/90 shadow-subtle overflow-hidden relative min-h-[420px] flex items-center justify-center" id="map-container">
+          
+          <!-- Stylized Vector Map Mode -->
+          <div id="vector-map" class="absolute inset-0 w-full h-full flex items-center justify-center map-pattern">
+            <svg class="absolute inset-0 w-full h-full stroke-slate-300/80" fill="none" stroke-width="4">
+              <path d="M-50 120 Q 200 180, 500 80 T 900 150" fill="none" stroke="#cbd5e1" stroke-width="12"></path>
+              <path d="M120 -50 L 320 500" stroke="#e2e8f0" stroke-width="16"></path>
+              <path d="M-20 320 C 180 280, 360 400, 750 300" stroke="#cbd5e1" stroke-width="8"></path>
+              <path d="M-20 420 C 180 390, 420 460, 800 380" stroke="#bfdbfe" stroke-linecap="round" stroke-width="24"></path>
+            </svg>
+            <div class="absolute top-12 left-10 w-28 h-20 bg-blue-100/70 rounded-2xl border border-blue-200/60 pointer-events-none"></div>
+            <div class="absolute bottom-16 right-16 w-36 h-28 bg-emerald-100/60 rounded-3xl border border-emerald-200/60 pointer-events-none"></div>
+
+            <a href="https://maps.app.goo.gl/btTZYH5aXQMzb6ZX8" target="_blank" rel="noopener noreferrer" class="relative z-10 flex flex-col items-center group cursor-pointer">
+              <div class="mb-2 px-3.5 py-1.5 rounded-xl bg-slate-950 text-white text-xs font-bold shadow-xl border border-slate-700 flex items-center gap-2 transition-transform duration-300 group-hover:-translate-y-1">
+                <span class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></span>
+                <span>Chamunda Mobile, Sector-8, Airoli</span>
+              </div>
+              <div class="relative">
+                <div class="w-12 h-12 bg-blue-600 rounded-full flex items-center justify-center text-white shadow-lg border-2 border-white group-hover:scale-110 transition-transform">
+                  <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"></path></svg>
+                </div>
+                <div class="absolute -bottom-1 left-1/2 -translate-x-1/2 w-6 h-2 bg-blue-900/30 rounded-full blur-sm"></div>
+              </div>
+            </a>
+
+            <div class="absolute top-4 left-4 bg-white/95 backdrop-blur-sm border border-slate-200 rounded-full px-3 py-1 text-[11px] font-semibold text-slate-700 shadow-sm">
+              📍 Opposite Apple Hospital, Sector-8, Airoli
+            </div>
+          </div>
+
+          <!-- Live Google Map Iframe (Hidden by default, toggleable) -->
+          <div id="live-map" class="hidden absolute inset-0 w-full h-full">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3768.802871035293!2d72.9926955!3d19.1590499!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf4d9cf281a1%3A0x6fb886e0c6068212!2sChamunda%20Mobile!5e0!3m2!1sen!2sin!4v1727543000000!5m2!1sen!2sin" 
+              width="100%" 
+              height="100%" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Chamunda Mobile Location Map">
+            </iframe>
+          </div>
+
+          <!-- Map View Mode Switcher -->
+          <div class="absolute bottom-4 right-4 z-20 flex gap-2">
+            <button onclick="toggleMapMode()" id="map-toggle-btn" class="px-3.5 py-1.5 rounded-xl bg-white/95 hover:bg-white text-slate-900 font-bold text-xs shadow-md border border-slate-200 transition-colors flex items-center gap-1.5">
+              <span id="map-toggle-text">Show Live Google Map</span> ↗
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- END: Visit & Contact Section -->
+
+  <!-- BEGIN: Footer -->
+  <footer class="bg-[#05080E] text-slate-400 border-t border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-slate-800/80">
+        <!-- Logo & Tagline -->
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full p-0.5 bg-gradient-to-tr from-blue-500 via-amber-400 to-blue-600 shadow-md flex items-center justify-center shrink-0 overflow-hidden">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDl6i_UJBrFFZ8P80yi9Pa3eMvdMeVkxoiBp8ai7WJ3WEI1UMxDwQjfkUxWJQ3PbFfLZ6GLAxfXhK4DJkRgeAlYKJi8_lIFsfPGSvM38oSYocep0A3_8nP8nxSxM6AZtCHdCxsuAAWFYQEJ0QSFbdpyw8U1S_l6Rpaep81BWA3O3I8a9z2lhP1_wG05_suflbuM1afSFRlH7IEwH5esAexhQeWWCkjdhTPBgt9-S1nC3ee8EFHAP8X9-cf8_v2R86ryXg" alt="Chamunda Mobile Logo" class="w-full h-full rounded-full object-cover">
+          </div>
+          <div>
+            <span class="block text-base font-bold text-white">CHAMUNDA MOBILE</span>
+            <span class="block text-[11px] text-slate-400 uppercase -mt-0.5">Mobiles &amp; Accessories • Airoli</span>
+          </div>
+        </div>
+
+        <!-- Navigation Links in Footer -->
+        <nav class="flex flex-wrap items-center justify-center gap-6 text-xs font-medium text-slate-300">
+          <a class="hover:text-blue-400 transition-colors" href="#home">Home</a>
+          <a class="hover:text-blue-400 transition-colors" href="#mobiles">Mobiles</a>
+          <a class="hover:text-blue-400 transition-colors" href="#accessories">Accessories</a>
+          <a class="hover:text-blue-400 transition-colors" href="#calculator">EMI Calculator</a>
+          <a class="hover:text-blue-400 transition-colors" href="#about">About Us</a>
+          <a class="hover:text-blue-400 transition-colors" href="#reviews">Reviews</a>
+          <a class="hover:text-blue-400 transition-colors" href="#visit">Visit Us</a>
+        </nav>
+
+        <!-- Social / Contact Links -->
+        <div class="flex items-center gap-4">
+          <a aria-label="WhatsApp" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700 hover:border-emerald-500 flex items-center justify-center text-slate-300 hover:text-emerald-400 transition-colors" href="https://wa.me/918690689207" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.086.086-.177.18-.076.353.101.173.45 0.742.966 1.202.664.591 1.224.774 1.397.86.173.086.274.072.375-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"></path></svg>
+          </a>
+          <a aria-label="Call Us" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700 hover:border-blue-500 flex items-center justify-center text-slate-300 hover:text-blue-400 transition-colors" href="tel:+917620575529">
+            <svg class="w-4 h-4 fill-none stroke-current" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+          </a>
+          <a aria-label="Google Maps Location" class="w-9 h-9 rounded-full bg-slate-900 border border-slate-700 hover:border-blue-500 flex items-center justify-center text-slate-300 hover:text-blue-400 transition-colors" href="https://maps.app.goo.gl/btTZYH5aXQMzb6ZX8" rel="noopener noreferrer" target="_blank">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 010-5 2.5 2.5 0 010 5z"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Disclaimer & Copyright notice -->
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <p>© 2026 Chamunda Mobile Showroom. All rights reserved. Physical showroom &amp; digital enquiry portal.</p>
+        <p class="text-slate-500 text-center sm:text-right">
+          Sector-8, Airoli, Navi Mumbai – 400708 | Ph: +91 76205 75529
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer -->
+
+  <!-- Floating Quick Action Dock & Back-To-Top -->
+  <div class="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
+    <!-- Back to Top Button -->
+    <button id="back-to-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" class="hidden w-11 h-11 rounded-full bg-slate-900/90 text-white border border-slate-700 hover:border-blue-500 flex items-center justify-center shadow-xl backdrop-blur-md transition-all duration-300 hover:-translate-y-1">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M5 10l7-7m0 0l7 7m-7-7v18" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+    </button>
+
+    <!-- Floating WhatsApp Bubble with Badge -->
+    <a href="https://wa.me/918690689207?text=Hello%20Chamunda%20Mobile,%20I%20am%20browsing%20your%20website%20and%20would%20like%20to%20enquire%20about..." target="_blank" rel="noopener noreferrer" class="group flex items-center gap-3 px-4 py-3 rounded-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs shadow-2xl transition-all duration-300 hover:scale-105">
+      <span class="w-2.5 h-2.5 rounded-full bg-white animate-ping"></span>
+      <span class="hidden sm:inline">Chat with Showroom</span>
+      <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.086.086-.177.18-.076.353.101.173.45 0.742.966 1.202.664.591 1.224.774 1.397.86.173.086.274.072.375-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"></path></svg>
+    </a>
+  </div>
+
+  <!-- MODAL: Product Quick View & Specs Modal -->
+  <div id="quickview-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-[#0D1322] border border-slate-700 rounded-3xl max-w-2xl w-full p-6 sm:p-8 text-white modal-enter shadow-2xl relative max-h-[90vh] overflow-y-auto">
+      <button onclick="closeQuickView()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-full bg-slate-800">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+      </button>
+
+      <div id="modal-content" class="space-y-6">
+        <!-- Content will be injected dynamically by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Lightbox Modal for Gallery & Assets -->
+  <div id="lightbox-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4" onclick="closeLightbox()">
+    <div class="relative max-w-4xl w-full text-center" onclick="event.stopPropagation()">
+      <button onclick="closeLightbox()" class="absolute -top-12 right-0 text-white p-2 text-xl font-bold">✕ Close</button>
+      <img id="lightbox-img" src="" alt="Enlarged Showcase" class="max-h-[80vh] mx-auto rounded-2xl shadow-2xl object-contain border border-slate-700">
+      <p id="lightbox-caption" class="text-sm font-semibold text-slate-300 mt-3"></p>
+    </div>
+  </div>
+
+  <!-- MODAL: Write Customer Review Modal -->
+  <div id="review-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-[#0D1322] border border-slate-700 rounded-3xl max-w-md w-full p-6 sm:p-8 text-white modal-enter shadow-2xl relative">
+      <button onclick="closeReviewModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 rounded-full bg-slate-800">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+      </button>
+
+      <h3 class="text-xl font-extrabold mb-1">Write a Review</h3>
+      <p class="text-xs text-slate-400 mb-6">Share your experience at Chamunda Mobile Showroom</p>
+
+      <form id="review-form" onsubmit="submitCustomerReview(event)" class="space-y-4">
+        <div>
+          <label class="text-xs font-semibold text-slate-400 block mb-1">Your Full Name</label>
+          <input type="text" id="review-name" required placeholder="e.g. Anand Kulkarni" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-blue-500">
+        </div>
+
+        <div>
+          <label class="text-xs font-semibold text-slate-400 block mb-1">Star Rating</label>
+          <div class="flex items-center gap-2 text-2xl text-amber-400 cursor-pointer" id="star-selector">
+            <span onclick="setReviewRating(1)">★</span>
+            <span onclick="setReviewRating(2)">★</span>
+            <span onclick="setReviewRating(3)">★</span>
+            <span onclick="setReviewRating(4)">★</span>
+            <span onclick="setReviewRating(5)">★</span>
+          </div>
+        </div>
+
+        <div>
+          <label class="text-xs font-semibold text-slate-400 block mb-1">Service / Purchase Type</label>
+          <select id="review-tag" class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-blue-500">
+            <option value="Smartphone Upgrade">Smartphone Upgrade</option>
+            <option value="Original Accessories">Original Accessories</option>
+            <option value="Data Transfer & Setup">Data Transfer &amp; Setup</option>
+            <option value="Finance & EMI">Finance &amp; EMI</option>
+            <option value="Phone Exchange">Phone Exchange</option>
+          </select>
+        </div>
+
+        <div>
+          <label class="text-xs font-semibold text-slate-400 block mb-1">Your Review</label>
+          <textarea id="review-comment" required rows="3" placeholder="Tell us how we assisted you..." class="w-full px-4 py-2.5 rounded-xl bg-slate-900 border border-slate-700 text-sm text-white focus:outline-none focus:border-blue-500"></textarea>
+        </div>
+
+        <button type="submit" class="w-full py-3 rounded-xl bg-blue-600 hover:bg-blue-700 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-md">
+          Submit Review
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast" class="fixed top-6 right-6 z-50 transform translate-y-[-100px] opacity-0 transition-all duration-300 pointer-events-none">
+    <div class="bg-blue-600 text-white px-5 py-3 rounded-2xl shadow-2xl flex items-center gap-3 text-xs font-bold border border-blue-400/40">
+      <span id="toast-icon">✓</span>
+      <span id="toast-message">Action successful!</span>
+    </div>
+  </div>
+
+  <!-- BEGIN: Interactive Client Logic Scripts -->
+  <script>
+    // 1. Mobile Menu Toggle
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      if (menuBtn && mobileMenu) {
+        menuBtn.addEventListener('click', () => {
+          mobileMenu.classList.toggle('hidden');
+        });
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+          });
+        });
+      }
+
+      // Check Store Status Dynamically
+      updateStoreStatus();
+      setInterval(updateStoreStatus, 60000);
+
+      // Load Saved Reviews from localStorage
+      loadSavedReviews();
+
+      // Initial EMI calculation
+      calculateEMI();
+      calculateTradeIn();
+    });
+
+    // 2. Reading Progress & Back To Top
+    window.addEventListener('scroll', () => {
+      const winScroll = document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      document.getElementById('scroll-progress').style.width = scrolled + '%';
+
+      const backToTop = document.getElementById('back-to-top');
+      if (winScroll > 400) {
+        backToTop.classList.remove('hidden');
+      } else {
+        backToTop.classList.add('hidden');
+      }
+    });
+
+    // 3. Dynamic Store Status (IST: 10:00 AM to 9:30 PM)
+    function updateStoreStatus() {
+      const now = new Date();
+      // UTC to IST (+5:30)
+      const istTime = new Date(now.getTime() + (5.5 * 60 * 60 * 1000));
+      const hours = istTime.getUTCHours();
+      const minutes = istTime.getUTCMinutes();
+      const timeDecimal = hours + (minutes / 60);
+
+      const statusPill = document.getElementById('store-status-pill');
+      const statusText = document.getElementById('store-status-text');
+
+      if (timeDecimal >= 10.0 && timeDecimal <= 21.5) {
+        if (statusText) statusText.innerText = 'Open Till 9:30 PM';
+        if (statusPill) {
+          statusPill.className = 'hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-950/80 border border-emerald-500/40 text-emerald-400';
+        }
+      } else {
+        if (statusText) statusText.innerText = 'Opens at 10:00 AM';
+        if (statusPill) {
+          statusPill.className = 'hidden sm:inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[10px] font-semibold bg-amber-950/80 border border-amber-500/40 text-amber-400';
+        }
+      }
+    }
+
+    // 4. Phone Products Catalog Data & Quick View Modal
+    const phoneData = {
+      'iphone-16-pro': {
+        title: 'Apple iPhone 16 Pro & Pro Max',
+        subtitle: 'Titanium Architecture • A18 Pro Chip • Camera Control',
+        badge: 'Apple Flagship 2026',
+        description: 'Features a lightweight Grade 5 titanium design with the thinnest borders on any Apple product. Includes dedicated Camera Control tactile sensor, 48MP Fusion Camera with 5x telephoto, and up to 33 hours video playback.',
+        specs: [
+          { label: 'Chipset', val: 'Apple A18 Pro with 6-core GPU & Neural Engine' },
+          { label: 'Display', val: '6.3" / 6.9" Super Retina XDR OLED, 120Hz ProMotion' },
+          { label: 'Rear Camera', val: '48MP Fusion + 48MP Ultra Wide + 12MP 5x Telephoto' },
+          { label: 'Charging', val: 'USB-C 3 (up to 10Gb/s) & 25W MagSafe Fast Charge' },
+          { label: 'Colors', val: 'Desert Titanium, Natural Titanium, White Titanium, Black' }
+        ],
+        variants: ['128GB', '256GB', '512GB', '1TB'],
+        priceNote: 'Live in-store demo active. No-cost EMI starting from ₹5,833/mo.'
+      },
+      'samsung-s24-ultra': {
+        title: 'Samsung Galaxy S24 Ultra 5G',
+        subtitle: 'Galaxy AI • Snapdragon 8 Gen 3 for Galaxy • Built-in S Pen',
+        badge: 'Samsung Flagship',
+        description: 'The pinnacle of Android craftsmanship. Titanium shield with Corning Gorilla Armor anti-reflective glass. Circle to Search with Google, Live Call Translate, Note Assist, and 200MP detail master sensor.',
+        specs: [
+          { label: 'Processor', val: 'Snapdragon 8 Gen 3 Mobile Platform for Galaxy' },
+          { label: 'Display', val: '6.8" Dynamic AMOLED 2X, 1-120Hz, 2600 nits' },
+          { label: 'Cameras', val: '200MP Main + 50MP 5x Periscope + 10MP 3x + 12MP UW' },
+          { label: 'Battery', val: '5000mAh with 45W Fast Charging & Wireless PowerShare' },
+          { label: 'Colors', val: 'Titanium Gray, Titanium Black, Titanium Violet, Yellow' }
+        ],
+        variants: ['256GB', '512GB', '1TB'],
+        priceNote: 'Live in showroom. Best exchange bonus up to ₹12,000 on old Galaxy.'
+      },
+      'oneplus-12': {
+        title: 'OnePlus 12 5G',
+        subtitle: '4th Gen Hasselblad Camera • 100W SUPERVOOC in Box',
+        badge: 'Smooth Beyond Belief',
+        description: 'Powered by Snapdragon 8 Gen 3 with massive Dual Cryo-velocity VC cooling. 2K 120Hz ProXDR display with Aqua Touch technology that works even with wet fingers.',
+        specs: [
+          { label: 'Chipset', val: 'Snapdragon 8 Gen 3 with 16GB LPDDR5X RAM' },
+          { label: 'Display', val: '6.82" 2K 120Hz LTPO ProXDR, 4500 nits peak' },
+          { label: 'Camera', val: '50MP Sony LYT-808 + 64MP 3x Periscope + 48MP UW' },
+          { label: 'Battery', val: '5400mAh with 100W Wired Charger in box + 50W Wireless' },
+          { label: 'Colors', val: 'Silky Black, Flowy Emerald' }
+        ],
+        variants: ['12GB+256GB', '16GB+512GB'],
+        priceNote: 'Original 100W charger included in retail box. Genuine bill with GST.'
+      },
+      'vivo-x100-pro': {
+        title: 'vivo X100 Pro 5G',
+        subtitle: 'ZEISS 1-Inch Sensor • V3 Custom Imaging Chip • Dimensity 9300',
+        badge: 'Ultimate Portrait Camera',
+        description: 'Engineered in partnership with ZEISS. Features an authentic 1-inch Sony sensor with ZEISS T* anti-reflective coating, 100W Dual-Cell FlashCharge, and cinema-grade portrait video bokeh.',
+        specs: [
+          { label: 'Processor', val: 'MediaTek Dimensity 9300 + vivo V3 Imaging Chip' },
+          { label: 'Camera', val: '50MP 1-inch + 50MP ZEISS APO Telephoto + 50MP UW' },
+          { label: 'Display', val: '6.78" 1.5K 120Hz LTPO AMOLED, 3000 nits peak' },
+          { label: 'Battery', val: '5400mAh with 100W Dual-Cell FlashCharge' },
+          { label: 'Colors', val: 'Asteroid Black, Sunset Orange' }
+        ],
+        variants: ['16GB+512GB'],
+        priceNote: 'Live test camera unit available in store. Compare side-by-side!'
+      },
+      'vivo-v40': {
+        title: 'vivo V40 & V40 Pro 5G',
+        subtitle: 'ZEISS Multifocal Portrait • India\'s Slimmest 5500mAh',
+        badge: 'Elegance & Stamina',
+        description: 'Stunning 3D curved aesthetic measuring only 7.58mm yet packing a gigantic 5500mAh battery. Dual stereo speakers and IP68 dust/water protection.',
+        specs: [
+          { label: 'Processor', val: 'MediaTek Dimensity 9200+ (Pro) / Snapdragon 7 Gen 3' },
+          { label: 'Camera', val: '50MP ZEISS OIS Main + 50MP ZEISS Telephoto + 50MP UW' },
+          { label: 'Battery', val: '5500mAh BlueVolt with 80W FlashCharge' },
+          { label: 'Protection', val: 'IP68 & IP69 Dust & Water Resistant' }
+        ],
+        variants: ['8GB+128GB', '8GB+256GB', '12GB+512GB'],
+        priceNote: 'Top-selling mid-flagship in Airoli Sector-8. Try in showroom!'
+      },
+      'realme-gt6': {
+        title: 'Realme GT 6 5G',
+        subtitle: 'Snapdragon 8s Gen 3 • 6000 Nits Ultra Display • 120W Flash',
+        badge: 'Power Meets Value',
+        description: 'High performance gaming & multitasking flagship with NEXT AI tools, 120W SuperVOOC charger in box, and Sony LYT-808 OIS primary camera.',
+        specs: [
+          { label: 'Processor', val: 'Snapdragon 8s Gen 3 with 9-layer 3D Iceberg VC' },
+          { label: 'Display', val: '6.78" 1.5K 8T LTPO, World\'s brightest 6000 nits' },
+          { label: 'Charging', val: '5500mAh with 120W SuperVOOC (50% in 10 mins)' }
+        ],
+        variants: ['8GB+256GB', '12GB+256GB', '16GB+512GB'],
+        priceNote: 'In stock today. Zero paper processing fee on Bajaj & HDB finance.'
+      }
+    };
+
+    let currentSelectedModel = null;
+    let selectedStorageVariant = '';
+
+    function openQuickView(modelKey) {
+      const data = phoneData[modelKey];
+      if (!data) return;
+      currentSelectedModel = data;
+      selectedStorageVariant = data.variants[0];
+
+      const modal = document.getElementById('quickview-modal');
+      const content = document.getElementById('modal-content');
+
+      let specsHtml = data.specs.map(s => `
+        <div class="p-3 rounded-xl bg-slate-900 border border-slate-800">
+          <span class="text-[10px] text-slate-400 block font-bold uppercase tracking-wider">${s.label}</span>
+          <span class="text-xs text-white font-medium mt-0.5 block">${s.val}</span>
+        </div>
+      `).join('');
+
+      let variantsHtml = data.variants.map((v, i) => `
+        <button onclick="selectVariant('${v}', this)" class="variant-pill px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all ${i === 0 ? 'bg-blue-600 text-white' : 'bg-slate-800 text-slate-300 hover:bg-slate-700'}">${v}</button>
+      `).join('');
+
+      content.innerHTML = `
+        <div class="flex items-center gap-2 mb-1">
+          <span class="px-2.5 py-0.5 rounded-full text-[10px] font-bold bg-blue-500/20 text-blue-300 border border-blue-500/40">${data.badge}</span>
+          <span class="px-2 py-0.5 rounded-full text-[10px] font-semibold bg-emerald-950 text-emerald-400 border border-emerald-500/30">Verified In Stock</span>
+        </div>
+        <div>
+          <h2 class="text-2xl font-extrabold text-white">${data.title}</h2>
+          <p class="text-xs text-blue-400 font-semibold mt-0.5">${data.subtitle}</p>
+        </div>
+        <p class="text-xs text-slate-300 leading-relaxed">${data.description}</p>
+        
+        <div>
+          <span class="text-xs font-bold text-slate-400 block mb-2">Select Storage Capacity:</span>
+          <div class="flex flex-wrap gap-2" id="modal-variants-container">
+            ${variantsHtml}
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <span class="text-xs font-bold text-slate-400 block">Key Specifications &amp; Features:</span>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+            ${specsHtml}
+          </div>
+        </div>
+
+        <div class="p-3 rounded-2xl bg-blue-950/60 border border-blue-900 flex items-center justify-between">
+          <span class="text-xs text-blue-200">💡 ${data.priceNote}</span>
+        </div>
+
+        <div class="pt-2 flex flex-col sm:flex-row gap-3">
+          <button onclick="enquireModelWhatsApp()" class="flex-1 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-lg flex items-center justify-center gap-2">
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.288.043.087.072.188.014.303-.058.116-.087.188-.173.289l-.26.303c-.086.086-.177.18-.076.353.101.173.45 0.742.966 1.202.664.591 1.224.774 1.397.86.173.086.274.072.375-.043.101-.116.433-.506.549-.679.116-.173.231-.144.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.202.043.072.043.419-.101.824z"></path></svg>
+            <span>Enquire Price on WhatsApp</span>
+          </button>
+          <button onclick="copyModelDetails()" class="px-5 py-3 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-300 font-bold text-xs uppercase tracking-wider transition-colors border border-slate-700">
+            Copy Model Specs
+          </button>
+        </div>
+      `;
+
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function selectVariant(v, btn) {
+      selectedStorageVariant = v;
+      document.querySelectorAll('#modal-variants-container .variant-pill').forEach(el => {
+        el.className = 'variant-pill px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-slate-800 text-slate-300 hover:bg-slate-700';
+      });
+      btn.className = 'variant-pill px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all bg-blue-600 text-white';
+    }
+
+    function closeQuickView() {
+      const modal = document.getElementById('quickview-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    function enquireModelWhatsApp() {
+      if (!currentSelectedModel) return;
+      const text = encodeURIComponent(`Hello Chamunda Mobile, I want to enquire about the price, available colors, and today's stock for: ${currentSelectedModel.title} (${selectedStorageVariant}).`);
+      window.open(`https://wa.me/918690689207?text=${text}`, '_blank');
+    }
+
+    function copyModelDetails() {
+      if (!currentSelectedModel) return;
+      const details = `${currentSelectedModel.title} (${selectedStorageVariant})\nShowroom: Chamunda Mobile, Sector-8, Airoli\nContact: +91 76205 75529`;
+      navigator.clipboard.writeText(details).then(() => {
+        showToast('Model details copied to clipboard!');
+      });
+    }
+
+    // 5. Phone Filtering & Search
+    let currentPhoneCategory = 'all';
+
+    function setPhoneCategory(cat, btn) {
+      currentPhoneCategory = cat;
+      document.querySelectorAll('#phone-filters .phone-filter-btn').forEach(b => {
+        b.className = 'phone-filter-btn px-4 py-2 rounded-full bg-white text-slate-700 hover:bg-slate-200 border border-slate-300 shrink-0';
+      });
+      btn.className = 'phone-filter-btn px-4 py-2 rounded-full bg-slate-900 text-white shadow-md shrink-0';
+      filterPhones();
+    }
+
+    function filterPhones() {
+      const query = document.getElementById('phone-search-input').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('#phones-grid .phone-card');
+
+      cards.forEach(card => {
+        const cat = card.getAttribute('data-category');
+        const name = card.getAttribute('data-name');
+        const matchesCat = (currentPhoneCategory === 'all' || cat === currentPhoneCategory);
+        const matchesQuery = (!query || name.includes(query));
+
+        if (matchesCat && matchesQuery) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // 6. Accessories Search Filter
+    function filterAccessories() {
+      const query = document.getElementById('acc-search-input').value.toLowerCase().trim();
+      const cards = document.querySelectorAll('#accessories-grid .acc-card');
+
+      cards.forEach(card => {
+        const name = card.getAttribute('data-name');
+        if (!query || name.includes(query)) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // 7. Lightbox Functionality
+    function openLightbox(src, caption) {
+      const modal = document.getElementById('lightbox-modal');
+      const img = document.getElementById('lightbox-img');
+      const cap = document.getElementById('lightbox-caption');
+      img.src = src;
+      cap.innerText = caption;
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('lightbox-modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // 8. EMI Calculator Logic
+    let selectedTenure = 9;
+
+    function setTenure(months, btn) {
+      selectedTenure = months;
+      document.querySelectorAll('#emi-tenures .emi-tenure-btn').forEach(b => {
+        b.className = 'emi-tenure-btn py-2 rounded-xl bg-slate-800 text-slate-300 hover:bg-slate-700';
+      });
+      btn.className = 'emi-tenure-btn py-2 rounded-xl bg-blue-600 text-white shadow-md';
+      calculateEMI();
+    }
+
+    function calculateEMI() {
+      const price = parseInt(document.getElementById('emi-price').value);
+      const dp = parseInt(document.getElementById('emi-dp').value);
+
+      document.getElementById('emi-price-val').innerText = '₹ ' + price.toLocaleString('en-IN');
+      const dpPercent = Math.round((dp / price) * 100);
+      document.getElementById('emi-dp-val').innerText = '₹ ' + dp.toLocaleString('en-IN') + ' (' + dpPercent + '%)';
+
+      const loan = Math.max(0, price - dp);
+      // Annual rate roughly 10% or zero cost
+      const annualRate = 0.10;
+      const monthlyRate = annualRate / 12;
+      let monthlyEmi = 0;
+
+      if (loan > 0) {
+        monthlyEmi = (loan * monthlyRate * Math.pow(1 + monthlyRate, selectedTenure)) / (Math.pow(1 + monthlyRate, selectedTenure) - 1);
+      }
+
+      document.getElementById('emi-monthly-val').innerText = '₹ ' + Math.round(monthlyEmi).toLocaleString('en-IN') + ' / mo';
+      document.getElementById('emi-loan-val').innerText = `Loan: ₹${loan.toLocaleString('en-IN')} • ${selectedTenure} Months • 0% Schemes Available`;
+    }
+
+    function applyEMIWhatsApp() {
+      const price = document.getElementById('emi-price-val').innerText;
+      const dp = document.getElementById('emi-dp-val').innerText;
+      const monthly = document.getElementById('emi-monthly-val').innerText;
+      const text = encodeURIComponent(`Hello Chamunda Mobile, I checked your online EMI Calculator for Phone Price ${price} with Down Payment ${dp}. My calculated EMI is approx ${monthly} for ${selectedTenure} months. Please guide me on zero-down paperless finance options in store.`);
+      window.open(`https://wa.me/918690689207?text=${text}`, '_blank');
+    }
+
+    // 9. Old Phone Trade-In Estimator
+    function calculateTradeIn() {
+      const brand = document.getElementById('trade-brand').value;
+      const condition = document.getElementById('trade-condition').value;
+      const hasBox = document.getElementById('trade-box').checked;
+      const hasBill = document.getElementById('trade-bill').checked;
+
+      let baseMin = 14000;
+      let baseMax = 20000;
+
+      if (brand === 'apple') { baseMin = 18000; baseMax = 32000; }
+      else if (brand === 'samsung') { baseMin = 15000; baseMax = 26000; }
+      else if (brand === 'oneplus') { baseMin = 13000; baseMax = 22000; }
+      else if (brand === 'vivo_oppo') { baseMin = 9000; baseMax = 18000; }
+      else { baseMin = 6000; baseMax = 13000; }
+
+      let condMultiplier = 1.0;
+      if (condition === 'flawless') condMultiplier = 1.15;
+      else if (condition === 'good') condMultiplier = 1.0;
+      else if (condition === 'scratched') condMultiplier = 0.8;
+      else if (condition === 'cracked') condMultiplier = 0.55;
+
+      let bonus = 2000; // Store exchange bonus
+      if (hasBox) bonus += 500;
+      if (hasBill) bonus += 500;
+
+      const finalMin = Math.round((baseMin * condMultiplier) + bonus);
+      const finalMax = Math.round((baseMax * condMultiplier) + bonus);
+
+      document.getElementById('trade-val-text').innerText = `₹ ${finalMin.toLocaleString('en-IN')} – ₹ ${finalMax.toLocaleString('en-IN')}`;
+    }
+
+    function lockTradeInWhatsApp() {
+      const brand = document.getElementById('trade-brand').options[document.getElementById('trade-brand').selectedIndex].text;
+      const est = document.getElementById('trade-val-text').innerText;
+      const text = encodeURIComponent(`Hello Chamunda Mobile, I checked trade-in value for my ${brand}. Estimated Value shown is ${est}. I would like to visit and lock this exchange quote.`);
+      window.open(`https://wa.me/918690689207?text=${text}`, '_blank');
+    }
+
+    // 10. Map Mode Toggle (Vector Graphic vs Google Maps Live Frame)
+    let isLiveMap = false;
+    function toggleMapMode() {
+      const vectorMap = document.getElementById('vector-map');
+      const liveMap = document.getElementById('live-map');
+      const btnText = document.getElementById('map-toggle-text');
+
+      if (!isLiveMap) {
+        vectorMap.classList.add('hidden');
+        liveMap.classList.remove('hidden');
+        btnText.innerText = 'Switch to Stylized Map';
+        isLiveMap = true;
+      } else {
+        liveMap.classList.add('hidden');
+        vectorMap.classList.remove('hidden');
+        btnText.innerText = 'Show Live Google Map';
+        isLiveMap = false;
+      }
+    }
+
+    function copyAddress() {
+      const address = "Chamunda Mobile Showroom, Shop No. 10, Plot No. 9, Maruti Enclave CHS. Ltd., Opp. Apple Hospital, Sector-8, Airoli, Navi Mumbai – 400708";
+      navigator.clipboard.writeText(address).then(() => {
+        showToast('Showroom address copied to clipboard!');
+      });
+    }
+
+    // 11. Write & Save Reviews Functionality
+    let currentRating = 5;
+
+    function openWriteReviewModal() {
+      document.getElementById('review-modal').classList.remove('hidden');
+      document.getElementById('review-modal').classList.add('flex');
+    }
+
+    function closeReviewModal() {
+      document.getElementById('review-modal').classList.add('hidden');
+      document.getElementById('review-modal').classList.remove('flex');
+    }
+
+    function setReviewRating(rating) {
+      currentRating = rating;
+      const stars = document.querySelectorAll('#star-selector span');
+      stars.forEach((star, i) => {
+        star.style.opacity = (i < rating) ? '1' : '0.25';
+      });
+    }
+
+    function submitCustomerReview(e) {
+      e.preventDefault();
+      const name = document.getElementById('review-name').value.trim();
+      const tag = document.getElementById('review-tag').value;
+      const comment = document.getElementById('review-comment').value.trim();
+
+      if (!name || !comment) return;
+
+      const newReview = {
+        name,
+        initials: name.split(' ').map(n => n[0]).join('').toUpperCase().substring(0, 2) || 'CM',
+        rating: currentRating,
+        tag,
+        comment,
+        time: 'Just now'
+      };
+
+      // Save to localStorage
+      let saved = [];
+      try {
+        saved = JSON.parse(localStorage.getItem('cm_reviews') || '[]');
+      } catch (err) {}
+      saved.unshift(newReview);
+      localStorage.setItem('cm_reviews', JSON.stringify(saved));
+
+      // Prepend to Grid
+      renderReviewCard(newReview, true);
+
+      closeReviewModal();
+      document.getElementById('review-form').reset();
+      showToast('Thank you! Your review has been published.');
+    }
+
+    function loadSavedReviews() {
+      try {
+        const saved = JSON.parse(localStorage.getItem('cm_reviews') || '[]');
+        saved.forEach(r => renderReviewCard(r, true));
+      } catch (e) {}
+    }
+
+    function renderReviewCard(r, prepend = false) {
+      const grid = document.getElementById('reviews-grid');
+      const card = document.createElement('div');
+      card.className = 'p-6 rounded-3xl bg-[#0D1322] border border-blue-500/40 shadow-xl flex flex-col justify-between space-y-4 modal-enter';
+      
+      let stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+
+      card.innerHTML = `
+        <div class="space-y-3">
+          <div class="flex items-start justify-between">
+            <div class="flex items-center gap-3">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-600 to-indigo-500 text-white font-bold flex items-center justify-center text-sm shadow-md">
+                ${r.initials}
+              </div>
+              <div>
+                <div class="flex items-center gap-1.5">
+                  <h4 class="text-sm font-bold text-white">${r.name}</h4>
+                  <svg class="w-3.5 h-3.5 fill-blue-400" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"></path></svg>
+                </div>
+                <span class="text-[11px] text-amber-400 font-medium block">Verified Customer</span>
+              </div>
+            </div>
+            <span class="text-[11px] text-slate-500">${r.time}</span>
+          </div>
+          <div class="flex text-amber-400 text-xs">${stars}</div>
+          <p class="text-xs text-slate-300 leading-relaxed">“${r.comment}”</p>
+        </div>
+        <div class="pt-3 border-t border-slate-800/80 flex items-center justify-between">
+          <span class="text-[10px] font-semibold text-blue-400 bg-blue-950/80 px-2.5 py-1 rounded-full border border-blue-900/60">${r.tag}</span>
+          <span class="text-[10px] text-emerald-400 font-medium">Verified In-Store</span>
+        </div>
+      `;
+
+      if (prepend && grid.firstChild) {
+        grid.insertBefore(card, grid.firstChild);
+      } else {
+        grid.appendChild(card);
+      }
+    }
+
+    // 12. Toast Feedback
+    function showToast(message) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toast-message');
+      toastMsg.innerText = message;
+      toast.classList.remove('translate-y-[-100px]', 'opacity-0');
+      toast.classList.add('translate-y-0', 'opacity-100');
+
+      setTimeout(() => {
+        toast.classList.add('translate-y-[-100px]', 'opacity-0');
+        toast.classList.remove('translate-y-0', 'opacity-100');
+      }, 3500);
+    }
+  </script>
+  <!-- END: Scripts -->
+
+</body>
+</html>

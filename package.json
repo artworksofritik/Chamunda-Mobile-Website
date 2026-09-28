@@ -1,0 +1,12 @@
+{
+  "name": "chamunda-mobile-showcase",
+  "version": "1.0.0",
+  "description": "Chamunda Mobile - Mobiles & Accessories Showroom Interactive Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "author": "Chamunda Mobile",
+  "license": "ISC"
+}
